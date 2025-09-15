@@ -7,12 +7,12 @@ This directory stores datasets used and produced by CTForge.
   - `conf/` – Value validity testing.
   - `code/` – Config functional testing..
 - `issue/` – reproduction tests and metadata for real-world problems, RQ1:
-  - `bug/` – code bugs.
-  - `code_change/` – cases showing behaviour differences after code modifications.
-  - `misconf/` – tests covering misconfiguration scenarios.
+  - `code bug/` – code bugs.
+  - `incompatible issue/` – incompatible issue.
+  - `misconf/` –  misconfiguration.
   - `real-world_issue.xlsx` – summary table of reported issues. RQ3:Mutation-based Refinement.
 - `misconfig_inject/` – assets for configuration injection experiments, RQ2:
-  - `inject_value/` – CSV files of alternative configuration values.
+  - `inject_value/` – CSV files of alternative misconfiguration values.
   - `res/` – JSON results from LLM evaluation for each model and project.
 - `param_data/` –  Configuration information for generating tests.
 
