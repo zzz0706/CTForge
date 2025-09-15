@@ -2,10 +2,6 @@
 
 This is a repo for MediConf(FSE26 submission)
 
-## Environment setup
-
-
-
 ## Running the workflow
 The workflow is split into dedicated packages so each stage can be used independently.
 ### 1. Gather configuration flow information
@@ -19,9 +15,9 @@ The workflow is split into dedicated packages so each stage can be used independ
 
 ### 2. Generate tests
 Integrate JaCoCo into the target software, and then execute the following command.
-    ```bash
+
     python generation.llm_test.py
-    ```
+
  `python generation.llm_test.py` compiles and executes the generated tests and coverage refinement.
 
 
