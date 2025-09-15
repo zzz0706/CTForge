@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-from ..Extract_Conf_Information.extract_cflow import Data_flow
+from extract_cflow import Data_flow
 from .llm_prompt import LLMPrompt
 from . import prompts
 

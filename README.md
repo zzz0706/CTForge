@@ -1,35 +1,48 @@
-# MediConf
+# MediConf:: Automatically Generating Configuration Tests For Large-scale Software Systems
 
-MediConf provides an end-to-end workflow for analysing configuration options in large Java projects and automatically generating JUnit tests with the help of large language models (LLMs).
+This is a repo for MediConf(FSE26 submission)
+
+## Environment setup
+
+
 
 ## Running the workflow
-
+The workflow is split into dedicated packages so each stage can be used independently.
 ### 1. Gather configuration flow information
 1. Generate propagation paths with **cFlow**.
    The analysis writes source-to-sink paths to `tmp.txt`.
 2. Summarise the paths and recover relevant source code.
    ```bash
-   python  generation.extract_cflow.py    # build summaries for param
    python  generation.get_source_code.py  # get CR code
+   python  generation.extract_cflow.py    # build summaries for param
    ```
 
 ### 2. Generate tests
+Integrate JaCoCo into the target software, and then execute the following command.
+    ```bash
+    python generation.llm_test.py
+    ```
  `python generation.llm_test.py` compiles and executes the generated tests and coverage refinement.
 
 
 ### 3. Iterate on test quality
 
    `iteration/coverage.py` coverage refinement
+   
+   `iteration/conf_inject.py` validity voting
+   
+   `iteration/mutation_testing.py` mutation-based refinement
  
 1. Inject alternative configuration values and perform validity voting:
    ```bash
-   python -m code.iteration.conf_inject.main hdfs
+   python -m iteration.conf_inject.main.py hdfs
    ```
 2. Perform mutation-based refinement:
+   `Pitest ` is a mutation operator used for mutation testing. Apply it to the target project and then execute the following command: 
    ```bash
-   python -m code.iteration.mutation_testing hdfs
+   python iteration.mutation_testing.py hdfs
    ```
-`pitest' is used for mutation testing.
+ 
 
 
 ## Data overview

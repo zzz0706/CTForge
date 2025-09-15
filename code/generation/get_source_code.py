@@ -4,13 +4,13 @@ import re
 import javalang
 
 from .path_construct import PathBuilder
-from .. import config
+
 
 
 class SourceCode:
     def __init__(self, repo_name: str = "hbase"):
         self.repo_name = repo_name
-        self.path = config.repo_path[repo_name][0]
+        self.path =[repo_name][0]
         self.code = ""
         self.path_builder = PathBuilder(repo_name)
 
