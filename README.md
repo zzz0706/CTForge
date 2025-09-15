@@ -1,4 +1,4 @@
-# MediConf:: Automatically Generating Configuration Tests For Large-scale Software Systems
+# MediConf: Automatically Generating Configuration Tests For Large-scale Software Systems
 
 This is a repo for MediConf(FSE26 submission)
 
