@@ -25,9 +25,9 @@ Integrate JaCoCo into the target software, and then execute the following comman
 
    `iteration/coverage.py` coverage refinement
    
-   `iteration/conf_inject.py` validity voting
+   `iteration/conf_inject` validity voting
    
-   `iteration/mutation_testing.py` mutation-based refinement
+   `iteration/mutation_iteration.py` mutation-based refinement
  
 1. Inject alternative configuration values and perform validity voting:
    ```bash
@@ -36,10 +36,10 @@ Integrate JaCoCo into the target software, and then execute the following comman
 2. Perform mutation-based refinement:
    `Pitest ` is a mutation operator used for mutation testing. Apply it to the target project and then execute the following command: 
    ```bash
-   python iteration.mutation_testing.py hdfs
+   python iteration.mutation_iteration.py hdfs
    ```
  
-
+` CTForge/code/demo ` is a demo project for MediConf, which is used to demonstrate the workflow.
 
 ## Data overview
 The `data/` directory collects artefacts produced during experiments:

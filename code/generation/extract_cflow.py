@@ -8,9 +8,7 @@ import json
 import csv
 import xml.etree.ElementTree as ET
 import sys
-sys.path.append('')
 from llm_prompt import LLMPrompt
-# from propagation_path import Path_Handler
 import time
 import ast
 
@@ -21,13 +19,13 @@ system_role = "You are a professional JAVA software engineer who understands the
 
 
 ask_prompt = """ 
+Below is the configuration information for HDFS 2.8.5. Please deduce brief configuration constraints and their usage within the code based on this information. Return only plain text .
+The configuration information is as follows. For the configuration information, you need to understand the functionality of the configuration and its value constraints.
 I will provide you with a propagation path of {conf_name} in {repo_name}.
 // The propagation path below is the one you need to extract.
 {propagation_path}
 Please help me generate the constraint information for the configuration and its usage in the code.
 """
-
-
 
 
 class Data_flow:

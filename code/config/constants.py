@@ -104,23 +104,3 @@ INJECTION_PATH = {
         os.path.join(CTEST_ALLUXIO_DIR, "core/alluxio-ctest.properties")
     ]
 }
-
-
-# constants for ctest generation -- generated test result file
-GENCTEST_TR_DIR = os.path.join(GEN_CTEST_DIR, "test_result") # test result directory
-os.makedirs(GENCTEST_TR_DIR, exist_ok=True)
-TR_FILE = "test_result_{id}.tsv"
-MT_FILE = "missing_test_{id}.list"
-FAIL = "f" # test failed
-PASS = "p" # test passed
-GOOD_VAL = "GOOD"
-BAD_VAL = "BAD"
-SKIP_VAL = "SKIP"
-
-CTESTS_DIR = os.path.join(GEN_CTEST_DIR, "ctest_mapping")
-os.makedirs(CTESTS_DIR, exist_ok=True)
-CTESTS_FILE = "ctests-{project}.json"
-
-# constants for running ctests
-RUNCTEST_TR_DIR = os.path.join(RUN_CTEST_DIR, "run_ctest_result") # test result directory
-os.makedirs(RUNCTEST_TR_DIR, exist_ok=True)
