@@ -11,19 +11,14 @@ import java.io.IOException;
 
 public class HadoopCommonTest {
 
-    // Test code
-    // 1. 使用API获取配置值，不要硬编码配置值
-    // 2. 准备测试条件
-    // 3. 测试代码
-    // 4. 测试后的代码
 
     @Test
     public void testFileSystemConfiguration() throws IOException {
-        // Step 1: 使用API获取配置值
+
         Configuration conf = new Configuration();
         conf.set("fs.defaultFS", "file:///");
 
-        // Step 2: 准备测试条件
+ 
         FileSystem fs = FileSystem.get(conf);
         Path testDir = new Path("/tmp/testDir");
         Path testFile = new Path("/tmp/testDir/testFile.txt");
@@ -33,7 +28,6 @@ public class HadoopCommonTest {
             fs.delete(testDir, true);
         }
 
-        // Step 3: 测试代码
         // Create directories and files
         fs.mkdirs(testDir);
         fs.create(testFile).close();
@@ -48,7 +42,6 @@ public class HadoopCommonTest {
         Assert.assertFalse(fileStatusFile.isDirectory());
         Assert.assertEquals(testFile.getName(), fileStatusFile.getPath().getName());
 
-        // Step 4: 测试后的代码
         // Clean up test data
         fs.delete(testDir, true);
 

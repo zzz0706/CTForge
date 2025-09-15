@@ -25,14 +25,14 @@ public class TestRPCConfiguration {
     
     @Test
     public void testRPC_waitForProtocolProxy_withValidConfiguration() throws Exception {
-        // 1. 使用API获取配置值，不要硬编码配置值
+
         Configuration conf = new Configuration();
         int rpcTimeout = Client.getRpcTimeout(conf);
 
-        // 2. 准备测试条件
+
         InetSocketAddress address = new InetSocketAddress("localhost", 12345);
 
-        // 3. 测试代码
+
         try {
             // RPC.waitForProtocolProxy requires an actual server implementation to connect to.
             // Hence, we'll mock the invocation for the test and ensure proper configuration handling.
@@ -44,7 +44,6 @@ public class TestRPCConfiguration {
                     rpcTimeout // Pass correct timeout value derived from configuration
             );
 
-            // 4. 测试后的代码
             assertNotNull(result); // Ensure the ProtocolProxy is successfully returned.
         } catch (Exception e) {
             fail("RPC.waitForProtocolProxy threw an unexpected exception: " + e.getMessage());

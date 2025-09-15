@@ -18,13 +18,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class TestClientConnection {
     @Test
     public void testGetConnectionMaxResponseLengthConfiguration() throws Exception {
-        // 1. 使用API获取配置值，不要硬编码配置值
+
         Configuration conf = new Configuration();
         int ipcMaximumResponseLength = conf.getInt(
                 CommonConfigurationKeys.IPC_MAXIMUM_RESPONSE_LENGTH,
                 CommonConfigurationKeys.IPC_MAXIMUM_RESPONSE_LENGTH_DEFAULT);
 
-        // 2. 准备测试条件
+
         InetSocketAddress address = NetUtils.createSocketAddr("localhost:0"); // Ensure the port is valid
         RetryPolicy retryPolicy = RetryPolicies.RETRY_FOREVER;
         UserGroupInformation ugi = UserGroupInformation.getCurrentUser();
@@ -40,7 +40,7 @@ public class TestClientConnection {
                 conf
         );
 
-        // 3. 测试代码
+
         try {
             // Create an instance of the Client using the correct constructor
             Client client = new Client(BytesWritable.class, conf);

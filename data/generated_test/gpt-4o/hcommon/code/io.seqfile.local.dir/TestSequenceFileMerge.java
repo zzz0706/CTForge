@@ -14,7 +14,7 @@ public class TestSequenceFileMerge {
     // Test the SequenceFile merge() method's interaction with the configuration "io.seqfile.local.dir".
     @Test
     public void testMergeFunctionWithValidConfiguration() throws IOException {
-        // 1. 使用API获取配置值，不要硬编码配置值
+    
         Configuration conf = new Configuration();
         conf.set("io.seqfile.local.dir", "file:///tmp"); // Use 'file://' for local directory compatibility
         conf.setStrings(
@@ -24,7 +24,7 @@ public class TestSequenceFileMerge {
         ); // Ensure Serializer is properly configured
         String localDirPropertyValue = conf.get("io.seqfile.local.dir");
 
-        // 2. 准备测试条件
+
         LocalDirAllocator lDirAlloc = new LocalDirAllocator("io.seqfile.local.dir");
         Path tmpDir = new Path(localDirPropertyValue);
         Path tmpFilename = new Path(tmpDir, "intermediate");
@@ -35,7 +35,6 @@ public class TestSequenceFileMerge {
             throw new AssertionError("Failed to allocate a valid output path.");
         }
 
-        // 3. 测试代码
         SequenceFile.Writer writer = SequenceFile.createWriter(
                 conf,
                 SequenceFile.Writer.file(outputFile),
@@ -49,7 +48,6 @@ public class TestSequenceFileMerge {
         writer.sync(); // Ensure data consistency
         writer.close();
 
-        // 4. 测试后的代码
         Path parentDirectory = outputFile.getParent();
         if (parentDirectory == null) {
             throw new AssertionError("Parent directory is null.");

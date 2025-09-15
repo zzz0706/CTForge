@@ -15,20 +15,18 @@ public class TestOsSecureRandom {
      */
     @Test
     public void test_nextBytes_invalidConfig() {
-        // 1. 使用API获取配置值，不要硬编码配置值
+
         Configuration conf = new Configuration();
         String defaultInvalidPath = "/nonexistent/urandom";
         conf.set("hadoop.security.random.device.file.path", defaultInvalidPath);
         String invalidFilePath = conf.get("hadoop.security.random.device.file.path");
 
-        // 2. 准备测试条件 - 确保文件路径不可访问
         File file = new File(invalidFilePath);
         // Update validation logic to avoid the need for external conditions
         if (file.exists()) {
             throw new AssertionError("The file should not exist for the test to be valid. Unexpected accessible file path: " + invalidFilePath);
         }
 
-        // 3. 测试代码
         OsSecureRandom osSecureRandom = new OsSecureRandom();
         osSecureRandom.setConf(conf);
 
@@ -47,6 +45,5 @@ public class TestOsSecureRandom {
                 : "Unexpected exception message: " + e.getMessage();
         }
 
-        // 4. 测试后的代码 - cleanup (if required, but none necessary here)
     }
 }

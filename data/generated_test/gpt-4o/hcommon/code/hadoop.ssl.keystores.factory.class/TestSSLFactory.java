@@ -10,20 +10,14 @@ import org.junit.Test;
 
 public class TestSSLFactory {
     // test code
-    // 1. 使用API获取配置值，不要硬编码配置值
-    // 2. 准备测试条件
-    // 3. 测试代码
-    // 4. 测试后的代码
-
+   
     @Test
     public void testSSLFactoryInitializationWithValidConfiguration() throws Exception {
-        // 1. 使用API获取配置值，不要硬编码配置值
+    
         Configuration conf = new Configuration();
-
-        // 2. 准备测试条件: Prepare the SSLFactory with mode and configuration.
+     
         SSLFactory sslFactory = new SSLFactory(SSLFactory.Mode.CLIENT, conf);
 
-        // 3. 测试代码: Test the init function
         sslFactory.init();
 
         // Assertions to ensure SSLFactory initialization
@@ -37,7 +31,6 @@ public class TestSSLFactory {
         // Additional check to ensure valid configuration in sslEngine
         assertTrue("SSLEngine should be in CLIENT mode", sslEngine.getUseClientMode());
 
-        // 4. 测试后的代码: Clean up resources used by SSLFactory
         sslFactory.destroy();
     }
 }

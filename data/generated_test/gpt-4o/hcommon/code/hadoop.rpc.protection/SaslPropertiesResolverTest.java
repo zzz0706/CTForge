@@ -11,12 +11,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class SaslPropertiesResolverTest {
-    // test code
-    // 1. 使用API获取配置值，不要硬编码配置值
-    // 2. 准备测试条件
-    // 3. 测试代码
-    // 4. 测试后的代码
-
     @Test
     public void testSetConfValidConfigurationValues() {
         // Create a Configuration instance to fetch specified property values using API

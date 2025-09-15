@@ -19,13 +19,13 @@ public class HealthMonitorConfigPropagationTest {
      */
     @Test
     public void testCreateProxy_UsesConfiguredRpcTimeout() throws Exception {
-        // 1. 使用API获取配置值，不要硬编码配置值
+
         final Configuration conf = new Configuration();
         final int configuredTimeout = conf.getInt(
                 CommonConfigurationKeys.HA_HM_RPC_TIMEOUT_KEY,
                 CommonConfigurationKeys.HA_HM_RPC_TIMEOUT_DEFAULT);
 
-        // 2. 准备测试条件
+  
         // Create a mock HAServiceTarget
         HAServiceTarget mockTarget = mock(HAServiceTarget.class);
         HAServiceProtocol dummyProxy = mock(HAServiceProtocol.class);
@@ -37,7 +37,7 @@ public class HealthMonitorConfigPropagationTest {
         // Construct HealthMonitor with mocked target and API-driven config value
         HealthMonitor monitor = new HealthMonitor(conf, mockTarget);
 
-        // 3. 测试代码: Should internally call getHealthMonitorProxy with 'configuredTimeout'
+        // 3.  Should internally call getHealthMonitorProxy with 'configuredTimeout'
         monitor.createProxy();
 
         // Verify that getHealthMonitorProxy was called with the correct timeout from the API
@@ -45,7 +45,6 @@ public class HealthMonitorConfigPropagationTest {
         verify(mockTarget).getHealthMonitorProxy(eq(conf), timeoutCaptor.capture());
 
         int actualTimeoutUsed = timeoutCaptor.getValue();
-        // 4. 测试后的代码: 验证超时时间
         assertEquals("HealthMonitor should propagate configuration timeout to target",
                 configuredTimeout, actualTimeoutUsed);
     }

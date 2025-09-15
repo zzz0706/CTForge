@@ -12,11 +12,6 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 
 public class TestBlockCompressWriterConfiguration {
-    // test code
-    // 1. 使用API获取配置值，不要硬编码配置值
-    // 2. 准备测试条件
-    // 3. 测试代码
-    // 4. 测试后的代码
 
     @Test
     public void testBlockCompressWriterConfigurationPropagation() throws IOException {

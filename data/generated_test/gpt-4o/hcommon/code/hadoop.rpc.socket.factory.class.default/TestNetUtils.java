@@ -10,14 +10,13 @@ public class TestNetUtils {
     //test code
     @Test
     public void testGetDefaultSocketFactory_withNullOrEmptyConfigKey() {
-        // 1. 使用API获取配置值，不要硬编码配置值
+    
         // Create a Hadoop Configuration object
         Configuration conf = new Configuration();
 
-        // 2. 准备测试条件
         String defaultSocketFactoryKey = "hadoop.rpc.socket.factory.class.default";
 
-        // 3. 测试代码
+
         // Verify behavior for key set to a valid value (use default JVM socket factory)
         conf.set(defaultSocketFactoryKey, SocketFactory.getDefault().getClass().getName());
         SocketFactory socketFactoryForValidKey = NetUtils.getDefaultSocketFactory(conf);

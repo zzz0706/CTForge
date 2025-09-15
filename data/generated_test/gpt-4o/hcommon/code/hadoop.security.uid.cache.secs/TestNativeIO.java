@@ -13,14 +13,14 @@ import java.io.IOException;
 public class TestNativeIO {       
     @Test
     public void test_getFstat_with_invalid_file_descriptor() {
-        // 1. 使用API获取配置值，不要硬编码配置值
+     
         Configuration conf = new Configuration();
         long cacheTimeout = conf.getLong(
             "hadoop.security.uid.cache.secs",
             14400
         );
 
-        // 2. 准备测试条件
+
         FileDescriptor invalidFileDescriptor = new FileDescriptor(); // Create an invalid file descriptor
 
         // Initialize NativeIO since it relies on native code and verify availability
@@ -47,6 +47,5 @@ public class TestNativeIO {
             Assert.fail("Expected NativeIOException, but received IOException");
         }
 
-        // 4. 测试后的代码 (if any cleanup is required, add it here)
     }
 }

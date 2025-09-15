@@ -6,13 +6,7 @@ import org.apache.hadoop.ipc.Client;
 import org.junit.Test;
 
 public class ClientTimeoutTest {
-    // Test code
-    // 1. 使用API获取配置值，不要硬编码配置值
-    // 2. 准备测试条件
-    // 3. 测试代码
-    // 4. 测试后的代码
-
-    @Test
+     @Test
     public void testClient_getTimeout_withPingEnabledAndTimeoutSet() {
         // Step 1: Create a Configuration object using the API
         Configuration conf = new Configuration();

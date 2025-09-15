@@ -18,8 +18,6 @@ import static org.mockito.Mockito.*;
  */
 public class TestHealthMonitorConfigurationEffect {
 
-    // 1. 使用API获取配置值，不要硬编码配置值
-    // 2. 准备测试条件
     @Test
     public void testLoopUntilConnected_RetriesUntilConnectionSucceeds_RespectsConfiguredTimeout() throws Exception {
         Configuration conf = new Configuration();

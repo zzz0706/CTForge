@@ -12,15 +12,6 @@ import static org.junit.Assert.fail;
 
 public class TestOsSecureRandom {
     
-    /**
-     * Test case name: test_fillReservoir_invalidConfig
-     * Objective: Verify that fillReservoir properly handles cases where the 
-     * configured random device file path is inaccessible.
-     * Prerequisites: The configuration key 'hadoop.security.random.device.file.path' 
-     * must point to a nonexistent or inaccessible secure random device file.
-     * Expected Result: An IOException or RuntimeException is thrown indicating 
-     * the random device file is inaccessible.
-     */
     @Test
     public void test_fillReservoir_invalidConfig() {
         // Obtain the configuration value using the API

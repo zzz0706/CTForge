@@ -6,12 +6,8 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 public class TestSSLFactory {      
-    //test code
-    //1. 使用API获取配置值，不要硬编码配置值
-    //2. 准备测试条件
-    //3. 测试代码
-    //4. 测试后的代码
-    
+ 
+
     // Prepare the input conditions for unit testing.
     @Test
     public void test_SSLFactory_ThrowExceptionForNullMode() {
