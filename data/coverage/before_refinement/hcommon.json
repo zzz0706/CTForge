@@ -1,468 +1,468 @@
 {
-  "average_line_coverage": 0.452,
-  "average_branch_coverage": 0.387,
+  "average_sc": 0.383,
+  "average_bc": 0.335,
   "details": [
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/JceAesCtrCryptoCodec.java",
       "method": "public void setConf(Configuration conf) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 1.0,
+      "bc": 1.0
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/JceAesCtrCryptoCodec.java",
       "method": "public void generateSecureRandom(byte[] bytes) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.703,
+      "bc": 0.254
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java",
       "method": "private void parseStaticMapping(Configuration conf) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.33
+      "sc": 0.434,
+      "bc": 0.409
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/TFile.java",
       "method": "static int getFSInputBufferSize(Configuration conf) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.286
+      "sc": 0.025,
+      "bc": 0.008
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java",
       "method": "private static String getName(IdCache domain, int id) throws IOException {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.301
+      "sc": 0.591,
+      "bc": 0.591
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java",
       "method": "public static Stat getFstat(FileDescriptor fd) throws IOException {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.315
+      "sc": 0.745,
+      "bc": 0.679
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java",
       "method": "private static FilterInitializer[] getFilterInitializers(Configuration conf) {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.319
+      "sc": 0.077,
+      "bc": 0.041
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java",
       "method": "public HttpServer2 build() throws IOException {",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.32
+      "sc": 0.293,
+      "bc": 0.217
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/JceAesCtrCryptoCodec.java",
       "method": "public void setConf(Configuration conf) {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.317
+      "sc": 0.962,
+      "bc": 1.0
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java",
       "method": "public AuthMethod run()",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.33
+      "sc": 0.589,
+      "bc": 0.589
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java",
       "method": "public Writable get(long timeout, TimeUnit unit)",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.4,
+      "bc": 0.392
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java",
       "method": "public boolean isDone() {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.286
+      "sc": 0.884,
+      "bc": 0.744
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "private Configuration readSSLConfiguration(Mode mode) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.732,
+      "bc": 0.692
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java",
       "method": "public void setConf(Configuration conf) {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.301
+      "sc": 0.119,
+      "bc": 0.119
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java",
       "method": "private int checkHealth(final CommandLine cmd)",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.155,
+      "bc": 0.154
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java",
       "method": "public int run(String[] argv) throws Exception {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.188,
+      "bc": 0.188
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java",
       "method": "protected int runCmd(String[] argv) throws Exception {",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.315
+      "sc": 0.295,
+      "bc": 0.295
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java",
       "method": "private int getServiceState(final CommandLine cmd)",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.319
+      "sc": 0.008,
+      "bc": 0.007
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java",
       "method": "protected int getAllServiceState() {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.32
+      "sc": 0.142,
+      "bc": 0.14
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java",
       "method": "public void refresh() {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.317
+      "sc": 0.456,
+      "bc": 0.44
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java",
       "method": "public List<String> getGroups(final String user) throws IOException {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.33
+      "sc": 0.29,
+      "bc": 0.267
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/ChecksumFileSystem.java",
       "method": "private int getSumBufferSize(int bytesPerSum, int bufferSize) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.164,
+      "bc": 0.164
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "public void init() throws GeneralSecurityException, IOException {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.286
+      "sc": 0.089,
+      "bc": 0.033
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "public SSLEngine createSSLEngine()",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.301
+      "sc": 0.121,
+      "bc": 0.113
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java",
       "method": "public static CryptoCodec getInstance(Configuration conf) {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.315
+      "sc": 0.896,
+      "bc": 0.614
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java",
       "method": "public void initialize(Configuration conf, FileSystem fs) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.319
+      "sc": 0.524,
+      "bc": 0.524
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java",
       "method": "public Runnable getEmptier() throws IOException {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.32
+      "sc": 0.017,
+      "bc": 0.014
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java",
       "method": "public void run() {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.317
+      "sc": 0.735,
+      "bc": 0.735
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java",
       "method": "protected long getEmptierInterval() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.848,
+      "bc": 0.667
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java",
       "method": "private Map<String, String> load() {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.33
+      "sc": 0.018,
+      "bc": 0.017
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java",
       "method": "public synchronized List<String> resolve(List<String> names) {",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.286
+      "sc": 0.724,
+      "bc": 0.447
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java",
       "method": "public void reloadCachedMappings() {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.301
+      "sc": 0.537,
+      "bc": 0.535
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java",
       "method": "public LinkedBlockingQueue<E> load(String keyName)",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.315
+      "sc": 0.51,
+      "bc": 0.51
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java",
       "method": "public void initializeQueuesForKeys(String... keyNames)",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.319
+      "sc": 0.623,
+      "bc": 0.445
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java",
       "method": "public void drain(String keyName ) {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.32
+      "sc": 0.844,
+      "bc": 0.844
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java",
       "method": "public int getSize(String keyName) {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.317
+      "sc": 0.365,
+      "bc": 0.353
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java",
       "method": "public List<E> getAtMost(String keyName, int num) throws IOException,",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.33
+      "sc": 0.013,
+      "bc": 0.012
     },
     {
       "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
       "method": "public void initialize(Configuration conf) {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.286
+      "sc": 0.551,
+      "bc": 0.541
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "public void init() throws GeneralSecurityException, IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.064,
+      "bc": 0.064
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "public void destroy() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.76,
+      "bc": 0.758
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "public KeyStoresFactory getKeystoresFactory() {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.301
+      "sc": 0.262,
+      "bc": 0.192
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java",
       "method": "protected void run() throws IOException {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.315
+      "sc": 0.917,
+      "bc": 0.598
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java",
       "method": "public void execute() throws IOException {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.319
+      "sc": 0.412,
+      "bc": 0.275
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java",
       "method": "private void runCommand() throws IOException {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.32
+      "sc": 0.278,
+      "bc": 0.278
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java",
       "method": "public void run() {",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.317
+      "sc": 0.183,
+      "bc": 0.183
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "private Configuration readSSLConfiguration(Mode mode) {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.33
+      "sc": 0.157,
+      "bc": 0.106
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/TFile.java",
       "method": "static int getFSOutputBufferSize(Configuration conf) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.286
+      "sc": 0.011,
+      "bc": 0.011
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/BytesWritable.java",
       "method": "public void setCapacity(int new_cap) {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.301
+      "sc": 0.946,
+      "bc": 0.896
     },
     {
       "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
       "method": "public void initialize(Configuration conf) {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.315
+      "sc": 0.023,
+      "bc": 0.022
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/KDiag.java",
       "method": "private void validateKinitExecutable() {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.319
+      "sc": 0.411,
+      "bc": 0.396
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/KDiag.java",
       "method": "public boolean execute() throws Exception {",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.32
+      "sc": 0.307,
+      "bc": 0.219
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java",
       "method": "private void spawnAutoRenewalThreadForUserCreds() {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.317
+      "sc": 0.073,
+      "bc": 0.073
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java",
       "method": "public void run() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.043,
+      "bc": 0.041
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java",
       "method": "static void loginUserFromSubject(Subject subject) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.814,
+      "bc": 0.612
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java",
       "method": "public static final int getRpcTimeout(Configuration conf) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.33
+      "sc": 0.131,
+      "bc": 0.085
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java",
       "method": "public static int getRpcTimeout(Configuration conf) {",
-      "line_coverage": 0.304,
-      "branch_coverage": 0.286
+      "sc": 0.109,
+      "bc": 0.083
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigRedactor.java",
       "method": "private boolean configIsSensitive(String key) {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.301
+      "sc": 0.053,
+      "bc": 0.053
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigRedactor.java",
       "method": "public String redact(String key, String value) {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.315
+      "sc": 0.409,
+      "bc": 0.403
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java",
       "method": "private static int getSlowLookupThresholdMs() {",
-      "line_coverage": 0.205,
-      "branch_coverage": 0.319
+      "sc": 0.087,
+      "bc": 0.084
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java",
       "method": "private void handleChecksumException(ChecksumException e)",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.32
+      "sc": 0.104,
+      "bc": 0.102
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java",
       "method": "public synchronized void sync(long position) throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.071,
+      "bc": 0.059
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java",
       "method": "public FsServerDefaults getServerDefaults() throws IOException {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.317
+      "sc": 0.038,
+      "bc": 0.035
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java",
       "method": "public int getBytesPerChecksum() {",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.33
+      "sc": 0.099,
+      "bc": 0.059
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java",
       "method": "public void write(DataOutput out) throws IOException {",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.286
+      "sc": 0.499,
+      "bc": 0.16
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/net/NetUtils.java",
       "method": "public static SocketFactory getDefaultSocketFactory(Configuration conf) {",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.301
+      "sc": 0.199,
+      "bc": 0.191
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java",
       "method": "public void init() throws GeneralSecurityException, IOException {",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.315
+      "sc": 0.494,
+      "bc": 0.212
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/SaslPropertiesResolver.java",
       "method": "public void setConf(Configuration conf) {",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.319
+      "sc": 0.95,
+      "bc": 1.0
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/SaslPropertiesResolver.java",
       "method": "public Map<String,String> getDefaultProperties() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.26,
+      "bc": 0.26
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/SaslPropertiesResolver.java",
       "method": "public Map<String, String> getServerProperties(InetAddress clientAddress){",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.32
+      "sc": 0.167,
+      "bc": 0.167
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/SaslPropertiesResolver.java",
       "method": "public Map<String, String> getClientProperties(InetAddress serverAddress){",
-      "line_coverage": 0.404,
-      "branch_coverage": 0.317
+      "sc": 0.51,
+      "bc": 0.509
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java",
       "method": "private SaslClient createSaslClient(SaslAuth authType)",
-      "line_coverage": 0.403,
-      "branch_coverage": 0.33
+      "sc": 0.267,
+      "bc": 0.266
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java",
       "method": "public synchronized void append(Object key, Object val)",
-      "line_coverage": 0.407,
-      "branch_coverage": 0.286
+      "sc": 0.091,
+      "bc": 0.073
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/ValueQueue.java",
       "method": "public LinkedBlockingQueue<E> load(String keyName)",
-      "line_coverage": 0.405,
-      "branch_coverage": 0.301
+      "sc": 0.063,
+      "bc": 0.059
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/ValueQueue.java",
       "method": "public void initializeQueuesForKeys(String... keyNames)",
-      "line_coverage": 0.4,
-      "branch_coverage": 0.315
+      "sc": 0.692,
+      "bc": 0.566
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/ValueQueue.java",
       "method": "public void drain(String keyName ) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.956,
+      "bc": 1.0
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/ValueQueue.java",
       "method": "public int getSize(String keyName) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.339,
+      "bc": 0.327
     },
     {
       "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/ValueQueue.java",
       "method": "public List<E> getAtMost(String keyName, int num) throws IOException,",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.561,
+      "bc": 0.559
     }
   ]
 }

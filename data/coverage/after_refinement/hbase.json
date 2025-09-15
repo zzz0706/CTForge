@@ -1,540 +1,540 @@
 {
-  "average_line_coverage": 0.689,
-  "average_branch_coverage": 0.595,
+  "average_sc": 0.553,
+  "average_bc": 0.513,
   "details": [
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/cleaner/TimeToLiveLogCleaner.java",
       "method": "public void setConf(Configuration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 1.0,
+      "bc": 1.0
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/cleaner/TimeToLiveLogCleaner.java",
       "method": "public boolean isFileDeletable(FileStatus fStat) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.418,
+      "bc": 0.368
     },
     {
       "file": "hbase-common/src/main/java/org/apache/hadoop/hbase/util/DynamicClassLoader.java",
       "method": "private synchronized void initTempDir(final Configuration conf) {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.207,
+      "bc": 0.207
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/wal/AbstractFSWALProvider.java",
       "method": "public static ServerName getServerNameFromWALDirectoryName(Configuration conf, String path)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.747,
+      "bc": 0.691
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
       "method": "private int putUpWebUI() throws IOException {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.443,
+      "bc": 0.443
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
       "method": "public void uncaughtException(Thread t, Throwable e) {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.977,
+      "bc": 1.0
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/RegionMover.java",
       "method": "public boolean unload() throws InterruptedException, ExecutionException, TimeoutException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.733,
+      "bc": 0.733
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "private static int calcNumWriters(final int count, final float readShare) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.757,
+      "bc": 0.631
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "private static int calcNumReaders(final int count, final float readShare) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.842,
+      "bc": 0.842
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "protected void startHandlers(final int port) {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.291,
+      "bc": 0.291
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "public boolean dispatch(final CallRunner callTask) throws InterruptedException {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.332,
+      "bc": 0.332
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "public int getWriteQueueLength() {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.517,
+      "bc": 0.517
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "public int getReadQueueLength() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.452,
+      "bc": 0.45
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "public int getScanQueueLength() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.973,
+      "bc": 1.0
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RWQueueRpcExecutor.java",
       "method": "protected void initializeQueues(final int numQueues) {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.634,
+      "bc": 0.633
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java",
       "method": "private MemStore getMemstore() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.02,
+      "bc": 0.019
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/mob/MobUtils.java",
       "method": "public static ExecutorService createMobCompactorThreadPool(Configuration conf) {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.693,
+      "bc": 0.693
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/mob/MobUtils.java",
       "method": "public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.782,
+      "bc": 0.782
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/LogRoller.java",
       "method": "public void run() {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.771,
+      "bc": 0.77
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterFileSystem.java",
       "method": "private Path checkRootDir(final Path rd, final Configuration c, final FileSystem fs)",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.584,
+      "bc": 0.574
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
       "method": "public static void checkVersion(FileSystem fs, Path rootdir, boolean message)",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.621,
+      "bc": 0.621
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
       "method": "public static void setVersion(FileSystem fs, Path rootdir, int wait, int retries)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.337,
+      "bc": 0.337
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/HBaseFsck.java",
       "method": "public void loadHdfsRegionDirs() throws IOException, InterruptedException {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.643,
+      "bc": 0.642
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/CompactionConfiguration.java",
       "method": "public long getMaxCompactSize() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.639,
+      "bc": 0.639
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/CompactionConfiguration.java",
       "method": "public long getMaxCompactSize(boolean mayUseOffpeak) {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.764,
+      "bc": 0.632
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
       "method": "public String getLoadBalancerClassName() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.93,
+      "bc": 0.93
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/assignment/AssignmentManager.java",
       "method": "public List<ServerName> getFavoredNodes(final RegionInfo regionInfo) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.947,
+      "bc": 0.937
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/assignment/AssignmentManager.java",
       "method": "private boolean shouldAssignFavoredNodes(RegionInfo region) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.591,
+      "bc": 0.437
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/balancer/LoadBalancerFactory.java",
       "method": "public static LoadBalancer getLoadBalancer(Configuration conf) {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.786,
+      "bc": 0.779
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/FSHLog.java",
       "method": "protected void doReplaceWriter(Path oldPath, Path newPath, Writer nextWriter) throws IOException {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.058,
+      "bc": 0.046
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/mob/MobFileCache.java",
       "method": "public void shutdown() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.414,
+      "bc": 0.404
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/CompactionConfiguration.java",
       "method": "public long getThrottlePoint() {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.418,
+      "bc": 0.407
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/SortedCompactionPolicy.java",
       "method": "public boolean throttleCompaction(long compactionSize) {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.54,
+      "bc": 0.54
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/StripeCompactionPolicy.java",
       "method": "public boolean throttleCompaction(long compactionSize) {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.416,
+      "bc": 0.416
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterFileSystem.java",
       "method": "private void createInitialFileSystemLayout() throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.731,
+      "bc": 0.724
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterFileSystem.java",
       "method": "private void checkSubDir(final Path p, final String dirPermsConfName) throws IOException {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.504,
+      "bc": 0.484
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanInfo.java",
       "method": "private static long getCellsPerTimeoutCheck(Configuration conf) {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.728,
+      "bc": 0.728
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
       "method": "public boolean next(List<Cell> outResult, ScannerContext scannerContext) throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.944,
+      "bc": 0.16
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/io/util/MemorySizeUtil.java",
       "method": "public static long getOnheapGlobalMemStoreSize(Configuration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.398,
+      "bc": 0.398
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/DefaultHeapMemoryTuner.java",
       "method": "public TunerResult tune(TunerContext context) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.655,
+      "bc": 0.655
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/RegionServerAccounting.java",
       "method": "public FlushType isAboveLowWaterMark() {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.936,
+      "bc": 0.929
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/balancer/BaseLoadBalancer.java",
       "method": "public void setConf(Configuration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.978,
+      "bc": 1.0
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/balancer/BaseLoadBalancer.java",
       "method": "protected void setSlop(Configuration conf) {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.537,
+      "bc": 0.126
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/balancer/BaseLoadBalancer.java",
       "method": "protected boolean needsBalance(Cluster c) {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.557,
+      "bc": 0.555
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/CompactionConfiguration.java",
       "method": "public long getMinCompactSize() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.874,
+      "bc": 0.87
     },
     {
       "file": "hbase-common/src/main/java/org/apache/hadoop/hbase/ScheduledChore.java",
       "method": "private double getMaximumAllowedTimeBetweenRuns() {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.76,
+      "bc": 0.76
     },
     {
       "file": "hbase-common/src/main/java/org/apache/hadoop/hbase/ScheduledChore.java",
       "method": "private synchronized boolean missedStartTime() {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.444,
+      "bc": 0.441
     },
     {
       "file": "hbase-common/src/main/java/org/apache/hadoop/hbase/ScheduledChore.java",
       "method": "public void run() {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.46,
+      "bc": 0.454
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/normalizer/RegionNormalizerFactory.java",
       "method": "public static RegionNormalizer getRegionNormalizer(Configuration conf) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.002,
+      "bc": 0.002
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
       "method": "protected void initializeZKBasedSystemTrackers()",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.988,
+      "bc": 1.0
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
       "method": "public long getMemStoreFlushSize() {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.55,
+      "bc": 0.55
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
       "method": "private boolean isFlushSize(MemStoreSize size) {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.829,
+      "bc": 0.632
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/IncreasingToUpperBoundRegionSplitPolicy.java",
       "method": "protected void configureForRegion(HRegion region) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.063,
+      "bc": 0.063
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/IncreasingToUpperBoundRegionSplitPolicy.java",
       "method": "protected long getSizeToCheck(final int tableRegionsCount) {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.579,
+      "bc": 0.301
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/TableDescriptorChecker.java",
       "method": "public static void sanityCheck(final Configuration conf, final TableDescriptor td)",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.604,
+      "bc": 0.595
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/ClusterStatusPublisher.java",
       "method": "public void connect(Configuration conf) throws IOException {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.129,
+      "bc": 0.116
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/CompactionConfiguration.java",
       "method": "public int getMaxFilesToCompact() {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.149,
+      "bc": 0.149
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
       "method": "public static void decorateMasterConfiguration(Configuration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.346,
+      "bc": 0.346
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/cleaner/CleanerChore.java",
       "method": "private void initCleanerChain(String confKey) {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.927,
+      "bc": 0.924
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/snapshot/SnapshotManager.java",
       "method": "private void checkSnapshotSupport(final Configuration conf, final MasterFileSystem mfs)",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.319,
+      "bc": 0.197
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/snapshot/SnapshotManager.java",
       "method": "public void initialize(MasterServices master, MetricsMaster metricsMaster) throws KeeperException,",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.386,
+      "bc": 0.386
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/snapshot/SnapshotManager.java",
       "method": "public void initialize(MasterServices master, MetricsMaster metricsMaster) throws KeeperException,",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.881,
+      "bc": 0.773
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HBaseInterClusterReplicationEndpoint.java",
       "method": "private void decorateConf() {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.558,
+      "bc": 0.558
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HBaseInterClusterReplicationEndpoint.java",
       "method": "public void init(Context context) throws IOException {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.531,
+      "bc": 0.531
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSink.java",
       "method": "private void decorateConf() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.686,
+      "bc": 0.655
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSource.java",
       "method": "private void decorateConf() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.369,
+      "bc": 0.368
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java",
       "method": "public static ChecksumType getChecksumType(Configuration conf) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.937,
+      "bc": 0.932
     },
     {
       "file": "hbase-common/src/main/java/org/apache/hadoop/hbase/util/ChecksumType.java",
       "method": "public static ChecksumType nameToType(final String name) {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.506,
+      "bc": 0.498
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/procedure/ProcedureManagerHost.java",
       "method": "protected void loadUserProcedures(Configuration conf, String confKey) {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.905,
+      "bc": 0.905
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/procedure/MasterProcedureManagerHost.java",
       "method": "public void loadProcedures(Configuration conf) {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.855,
+      "bc": 0.774
     },
     {
       "file": "hbase-common/src/main/java/org/apache/hadoop/hbase/security/Superusers.java",
       "method": "public static void initialize(Configuration conf) throws IOException {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.483,
+      "bc": 0.482
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/mob/MobFileCache.java",
       "method": "public void evict() {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.503,
+      "bc": 0.459
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
       "method": "public int getRegionServerInfoPort(final ServerName sn) {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.145,
+      "bc": 0.144
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
       "method": "private int putUpWebUI() throws IOException {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.351,
+      "bc": 0.351
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/tool/coprocessor/CoprocessorValidator.java",
       "method": "protected int doWork() throws Exception {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.082,
+      "bc": 0.062
     },
     {
       "file": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClusterStatusListener.java",
       "method": "public void connect(Configuration conf) throws IOException {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.289,
+      "bc": 0.164
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/ClusterStatusPublisher.java",
       "method": "public void connect(Configuration conf) throws IOException {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.082,
+      "bc": 0.071
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/FlushLargeStoresPolicy.java",
       "method": "protected void setFlushSizeLowerBounds(HRegion region) {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.538,
+      "bc": 0.535
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java",
       "method": "public long getCompactionCheckMultiplier() {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.051,
+      "bc": 0.048
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
       "method": "protected void chore() {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.618,
+      "bc": 0.598
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HBaseInterClusterReplicationEndpoint.java",
       "method": "private List<List<Entry>> createParallelBatches(final List<Entry> entries) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.631,
+      "bc": 0.391
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HBaseInterClusterReplicationEndpoint.java",
       "method": "private List<List<Entry>> createBatches(final List<Entry> entries) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.317,
+      "bc": 0.309
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HBaseInterClusterReplicationEndpoint.java",
       "method": "public boolean replicate(ReplicateContext replicateContext) {",
-      "line_coverage": 0.743,
-      "branch_coverage": 0.601
+      "sc": 0.129,
+      "bc": 0.05
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HBaseInterClusterReplicationEndpoint.java",
       "method": "protected void doStop() {",
-      "line_coverage": 0.73,
-      "branch_coverage": 0.603
+      "sc": 0.677,
+      "bc": 0.677
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterFileSystem.java",
       "method": "private void createInitialFileSystemLayout() throws IOException {",
-      "line_coverage": 0.733,
-      "branch_coverage": 0.597
+      "sc": 0.009,
+      "bc": 0.009
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
       "method": "protected synchronized ServerName createRegionServerStatusStub(boolean refresh) {",
-      "line_coverage": 0.902,
-      "branch_coverage": 0.597
+      "sc": 0.727,
+      "bc": 0.724
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/HFileReplicator.java",
       "method": "public Void replicate() throws IOException {",
-      "line_coverage": 0.725,
-      "branch_coverage": 0.601
+      "sc": 0.472,
+      "bc": 0.082
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/io/hfile/BlockCacheFactory.java",
       "method": "private static BucketCache createBucketCache(Configuration c) {",
-      "line_coverage": 0.912,
-      "branch_coverage": 0.603
+      "sc": 0.737,
+      "bc": 0.736
     },
     {
       "file": "hbase-server/src/main/java/org/apache/hadoop/hbase/io/hfile/BlockCacheFactory.java",
       "method": "public static BlockCache createBlockCache(Configuration conf) {",
-      "line_coverage": 0.898,
-      "branch_coverage": 0.597
+      "sc": 0.476,
+      "bc": 0.476
     }
   ]
 }

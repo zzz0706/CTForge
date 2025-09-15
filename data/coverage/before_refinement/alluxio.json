@@ -1,798 +1,798 @@
 {
-  "average_line_coverage": 0.449,
-  "average_branch_coverage": 0.402,
+  "average_sc": 0.406,
+  "average_bc": 0.363,
   "details": [
     {
       "file": "alluxio/core/server/common/src/main/java/alluxio/master/journal/JournalSystem.java",
       "method": "public Builder setQuietTimeMs(long quietTimeMs) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 1.0,
+      "bc": 1.0
     },
     {
       "file": "alluxio/core/server/common/src/main/java/alluxio/master/journal/JournalSystem.java",
       "method": "public JournalSystem build(CommonUtils.ProcessType processType) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.279,
+      "bc": 0.04
     },
     {
       "file": "alluxio/core/server/common/src/main/java/alluxio/master/journal/ufs/UfsJournalSystem.java",
       "method": "public UfsJournal createJournal(Master master) {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.281
+      "sc": 0.634,
+      "bc": 0.634
     },
     {
       "file": "alluxio/core/server/common/src/main/java/alluxio/cli/Format.java",
       "method": "private static void formatWorkerDataFolder(String folder) throws IOException {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.435
+      "sc": 0.358,
+      "bc": 0.351
     },
     {
       "file": "alluxio/core/server/common/src/main/java/alluxio/cli/Format.java",
       "method": "public static void format(Mode mode, AlluxioConfiguration alluxioConf) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.71,
+      "bc": 0.71
     },
     {
       "file": "alluxio/core/server/worker/src/main/java/alluxio/worker/block/TieredBlockStore.java",
       "method": "private static void createBlockFile(String blockPath) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.374,
+      "bc": 0.374
     },
     {
       "file": "alluxio/core/server/worker/src/main/java/alluxio/worker/block/meta/StorageDir.java",
       "method": "private void initializeMeta() throws BlockAlreadyExistsException, IOException,",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.485
+      "sc": 0.553,
+      "bc": 0.236
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/meta/DailyMetadataBackup.java",
       "method": "private void dailyBackup() {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.457
+      "sc": 0.225,
+      "bc": 0.225
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/meta/DailyMetadataBackup.java",
       "method": "private void deleteStaleBackups() throws Exception {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.413
+      "sc": 0.04,
+      "bc": 0.038
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/meta/DailyMetadataBackup.java",
       "method": "public void start() {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.29
+      "sc": 0.126,
+      "bc": 0.117
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/meta/DefaultMetaMaster.java",
       "method": "public BackupResponse backup(BackupPOptions options) throws IOException {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.37
+      "sc": 0.833,
+      "bc": 0.221
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/file/DefaultFileSystemMaster.java",
       "method": "public List<String> getWhiteList() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.249,
+      "bc": 0.083
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/meta/AlluxioMasterRestServiceHandler.java",
       "method": "public Response getWebUIConfiguration() {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.428
+      "sc": 0.397,
+      "bc": 0.182
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/meta/DefaultMetaMaster.java",
       "method": "public void start(Boolean isPrimary) throws IOException {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.384
+      "sc": 0.784,
+      "bc": 0.782
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startJvmMonitorProcess() {",
-      "line_coverage": 0.441,
-      "branch_coverage": 0.38
+      "sc": 0.326,
+      "bc": 0.325
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startServing(String startMessage, String stopMessage) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.642,
+      "bc": 0.642
     },
     {
       "file": "alluxio/core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "public void start() throws Exception {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.195,
+      "bc": 0.195
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/meta/AlluxioMasterRestServiceHandler.java",
       "method": "public Response getWebUIInit() {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.47
+      "sc": 0.555,
+      "bc": 0.206
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/AlluxioWorkerRestServiceHandler.java",
       "method": "public Response getWebUIInit() {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.38
+      "sc": 0.211,
+      "bc": 0.201
     },
     {
       "file": "core/common/src/main/java/alluxio/wire/MasterWebUIInit.java",
       "method": "public MasterWebUIInit setRefreshInterval(int interval) {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.419
+      "sc": 0.017,
+      "bc": 0.015
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/meta/AbstractBlockMeta.java",
       "method": "public static String tempPath(StorageDir dir, long sessionId, long blockId) {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.435
+      "sc": 0.472,
+      "bc": 0.437
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/meta/StorageTier.java",
       "method": "private void initStorageTier()",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.0,
+      "bc": 0.0
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/meta/StorageTier.java",
       "method": "public static StorageTier newStorageTier(String tierAlias)",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.37
+      "sc": 0.354,
+      "bc": 0.284
     },
     {
       "file": "core/base/src/main/java/alluxio/util/io/PathUtils.java",
       "method": "public static String concatPath(Object base, Object... paths) throws IllegalArgumentException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.618,
+      "bc": 0.585
     },
     {
       "file": "core/common/src/main/java/alluxio/util/network/NettyUtils.java",
       "method": "public static ChannelType getUserChannel(AlluxioConfiguration conf) {",
-      "line_coverage": 0.441,
-      "branch_coverage": 0.474
+      "sc": 0.901,
+      "bc": 0.897
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/FileSystemContext.java",
       "method": "public void reinit(boolean updateClusterConf, boolean updatePathConf)",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.457
+      "sc": 0.119,
+      "bc": 0.119
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/FileSystemContext.java",
       "method": "private synchronized void closeContext() throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.097,
+      "bc": 0.097
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/FileSystemContext.java",
       "method": "public synchronized void close() throws IOException {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.419
+      "sc": 0.679,
+      "bc": 0.633
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/FileSystemContext.java",
       "method": "public BlockWorkerClient acquireBlockWorkerClient(final WorkerNetAddress workerNetAddress)",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.413
+      "sc": 0.419,
+      "bc": 0.406
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startServingRPCServer() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.023,
+      "bc": 0.019
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/MasterJournalContext.java",
       "method": "private void waitForJournalFlush() throws UnavailableException {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.428
+      "sc": 0.431,
+      "bc": 0.253
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/MasterJournalContext.java",
       "method": "public void close() throws UnavailableException {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.485
+      "sc": 0.639,
+      "bc": 0.639
     },
     {
       "file": "core/common/src/main/java/alluxio/grpc/GrpcChannelBuilder.java",
       "method": "public GrpcChannel build() throws AlluxioStatusException {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.474
+      "sc": 0.741,
+      "bc": 0.741
     },
     {
       "file": "core/common/src/main/java/alluxio/grpc/GrpcManagedChannelPool.java",
       "method": "private boolean waitForChannelReady(ManagedChannel managedChannel, long healthCheckTimeoutMs) {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.47
+      "sc": 0.311,
+      "bc": 0.311
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/PrimarySelector.java",
       "method": "public static PrimarySelector createZkJobPrimarySelector() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.706,
+      "bc": 0.523
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/file/DefaultFileSystemMaster.java",
       "method": "public void start(Boolean isPrimary) throws IOException {",
-      "line_coverage": 0.441,
-      "branch_coverage": 0.281
+      "sc": 0.227,
+      "bc": 0.227
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startServingRPCServer() {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.29
+      "sc": 0.363,
+      "bc": 0.363
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/FileSystemContext.java",
       "method": "public BlockWorkerClient acquireBlockWorkerClient(final WorkerNetAddress workerNetAddress)",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.269,
+      "bc": 0.269
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/file/meta/InodeTree.java",
       "method": "private boolean checkPinningValidity(Set<String> pinnedMediumTypes) {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.457
+      "sc": 0.536,
+      "bc": 0.536
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/file/meta/InodeTreePersistentState.java",
       "method": "private void applyUpdateInode(UpdateInodeEntry entry) {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.384
+      "sc": 0.863,
+      "bc": 0.863
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/file/meta/InodeTreePersistentState.java",
       "method": "public UpdateInodeEntry applyInodeAccessTime(long inodeId, long accessTime) {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.38
+      "sc": 0.488,
+      "bc": 0.443
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/block/policy/LocalFirstAvoidEvictionPolicy.java",
       "method": "public boolean equals(Object o) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.469,
+      "bc": 0.469
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "private void checkTimeouts() {",
-      "line_coverage": 0.735,
-      "branch_coverage": 0.37
+      "sc": 0.154,
+      "bc": 0.152
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "public void validate() {",
-      "line_coverage": 0.826,
-      "branch_coverage": 0.419
+      "sc": 0.155,
+      "bc": 0.155
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/DefaultSafeModeManager.java",
       "method": "public void notifyRpcServerStarted() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.784,
+      "bc": 0.665
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/DefaultSafeModeManager.java",
       "method": "public boolean isInSafeMode() {",
-      "line_coverage": 0.741,
-      "branch_coverage": 0.428
+      "sc": 0.154,
+      "bc": 0.151
     },
     {
       "file": "core/common/src/main/java/alluxio/util/ConfigurationUtils.java",
       "method": "public static List<InetSocketAddress> getJobMasterRpcAddresses(AlluxioConfiguration conf) {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.474
+      "sc": 0.274,
+      "bc": 0.274
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/options/OutStreamOptions.java",
       "method": "public static OutStreamOptions defaults(ClientContext context) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.876,
+      "bc": 0.842
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static CreateFilePOptions createFileDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.68,
-      "branch_coverage": 0.47
+      "sc": 0.084,
+      "bc": 0.083
     },
     {
       "file": "core/transport/src/main/java/alluxio/grpc/CreateFilePOptions.java",
       "method": "public Builder setReplicationMin(int value) {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.38
+      "sc": 0.071,
+      "bc": 0.071
     },
     {
       "file": "core/client/hdfs/src/main/java/alluxio/hadoop/AbstractFileSystem.java",
       "method": "public short getDefaultReplication() {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.457
+      "sc": 0.705,
+      "bc": 0.7
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "private void checkTimeouts() {",
-      "line_coverage": 0.528,
-      "branch_coverage": 0.419
+      "sc": 0.61,
+      "bc": 0.266
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "private void checkHeartbeatTimeout(PropertyKey intervalKey, PropertyKey timeoutKey) {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.413
+      "sc": 0.109,
+      "bc": 0.085
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "public void validate() {",
-      "line_coverage": 0.226,
-      "branch_coverage": 0.384
+      "sc": 0.201,
+      "bc": 0.162
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/meta/DefaultMetaMaster.java",
       "method": "public void start(Boolean isPrimary) throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.362,
+      "bc": 0.303
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/allocator/Allocator.java",
       "method": "public static Allocator create(BlockMetadataView view) {",
-      "line_coverage": 0.541,
-      "branch_coverage": 0.38
+      "sc": 0.464,
+      "bc": 0.337
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "public void close() {}",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.435
+      "sc": 0.067,
+      "bc": 0.066
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "protected ClientRWLock createNewResource() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.236,
+      "bc": 0.207
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "private ClientRWLock getBlockLock(long blockId) {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.37
+      "sc": 0.916,
+      "bc": 0.852
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "private void releaseBlockLockIfUnused(long blockId) {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.428
+      "sc": 0.924,
+      "bc": 0.778
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "public long lockBlock(long sessionId, long blockId, BlockLockType blockLockType) {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.474
+      "sc": 0.457,
+      "bc": 0.391
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "private void unlock(Lock lock, long blockId) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.47
+      "sc": 0.313,
+      "bc": 0.313
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/BlockLockManager.java",
       "method": "public void cleanupSession(long sessionId) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.446,
+      "bc": 0.444
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/client/file/BaseFileSystem.java",
       "method": "public List<BlockLocationInfo> getBlockLocations(AlluxioURI path)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.224,
+      "bc": 0.222
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/audit/AsyncUserAccessAuditLogWriter.java",
       "method": "public boolean append(AuditContext context) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.34,
+      "bc": 0.339
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/audit/AsyncUserAccessAuditLogWriter.java",
       "method": "public void run() {",
-      "line_coverage": 0.441,
-      "branch_coverage": 0.419
+      "sc": 0.65,
+      "bc": 0.577
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/PrimarySelector.java",
       "method": "public static PrimarySelector createZkJobPrimarySelector() {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.413
+      "sc": 0.415,
+      "bc": 0.373
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static CreateFilePOptions createFileDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.2,
+      "bc": 0.199
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static CheckConsistencyPOptions checkConsistencyDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.384
+      "sc": 0.609,
+      "bc": 0.609
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static CreateDirectoryPOptions createDirectoryDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.38
+      "sc": 0.895,
+      "bc": 0.841
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static DeletePOptions deleteDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.477,
+      "bc": 0.477
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static ExistsPOptions existsDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.009,
+      "bc": 0.009
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static FreePOptions freeDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.883,
+      "bc": 0.882
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static GetStatusPOptions getStatusDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.726,
-      "branch_coverage": 0.428
+      "sc": 0.03,
+      "bc": 0.03
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static ListStatusPOptions listStatusDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.059,
+      "bc": 0.059
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static LoadMetadataPOptions loadMetadataDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.441,
-      "branch_coverage": 0.374
+      "sc": 0.756,
+      "bc": 0.386
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static MountPOptions mountDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.22,
+      "bc": 0.219
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static OpenFilePOptions openFileDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.659,
+      "bc": 0.656
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static RenamePOptions renameDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.244,
+      "bc": 0.244
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static SetAclPOptions setAclDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.731,
-      "branch_coverage": 0.457
+      "sc": 0.971,
+      "bc": 1.0
     },
     {
       "file": "core/client/fs/src/main/java/alluxio/util/FileSystemOptions.java",
       "method": "public static SetAttributePOptions setAttributeDefaults(AlluxioConfiguration conf) {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.419
+      "sc": 0.297,
+      "bc": 0.288
     },
     {
       "file": "core/common/src/main/java/alluxio/resource/ResourcePool.java",
       "method": "public T acquire(long time, TimeUnit unit) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.413
+      "sc": 0.053,
+      "bc": 0.052
     },
     {
       "file": "core/common/src/main/java/alluxio/resource/ResourcePool.java",
       "method": "public T acquire(long time, TimeUnit unit) {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.384
+      "sc": 0.974,
+      "bc": 1.0
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/block/DefaultBlockMaster.java",
       "method": "public void heartbeat() {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.38
+      "sc": 0.623,
+      "bc": 0.623
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalConfiguration.java",
       "method": "public static RaftJournalConfiguration defaults(ServiceType serviceType) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.838,
+      "bc": 0.749
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalConfiguration.java",
       "method": "public RaftJournalConfiguration setElectionTimeoutMs(long electionTimeoutMs) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.534,
+      "bc": 0.534
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalConfiguration.java",
       "method": "public long getElectionTimeoutMs() {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.37
+      "sc": 0.629,
+      "bc": 0.627
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalConfiguration.java",
       "method": "public void validate() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.065,
+      "bc": 0.065
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalSystem.java",
       "method": "private synchronized void initServer() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.195,
+      "bc": 0.158
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalSystem.java",
       "method": "private void catchUp(JournalStateMachine stateMachine, CopycatClient client)",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.474
+      "sc": 0.349,
+      "bc": 0.346
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalSystem.java",
       "method": "public synchronized void startInternal() throws InterruptedException, IOException {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.47
+      "sc": 0.242,
+      "bc": 0.161
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalSystem.java",
       "method": "public synchronized void losePrimacy() {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.38
+      "sc": 0.095,
+      "bc": 0.095
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalSystem.java",
       "method": "public synchronized void gainPrimacy() {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.457
+      "sc": 0.417,
+      "bc": 0.415
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalSystem.java",
       "method": "public synchronized void losePrimacy() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.079,
+      "bc": 0.068
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/transport/CopycatMessageServiceClientHandler.java",
       "method": "public StreamObserver<CopycatMessage> connect(StreamObserver<CopycatMessage> responseObserver) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.213,
+      "bc": 0.137
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/meta/AlluxioMasterRestServiceHandler.java",
       "method": "public Response getWebUIInit() {",
-      "line_coverage": 0.241,
-      "branch_coverage": 0.413
+      "sc": 0.044,
+      "bc": 0.016
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/AlluxioWorkerRestServiceHandler.java",
       "method": "public Response getWebUIInit() {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.384
+      "sc": 0.237,
+      "bc": 0.236
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/file/DefaultFileSystemMaster.java",
       "method": "public void start(Boolean isPrimary) throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.219,
+      "bc": 0.196
     },
     {
       "file": "core/common/src/main/java/alluxio/security/group/GroupMappingService.java",
       "method": "public static GroupMappingService get(AlluxioConfiguration conf) {",
-      "line_coverage": 0.138,
-      "branch_coverage": 0.38
+      "sc": 0.05,
+      "bc": 0.05
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalConfiguration.java",
       "method": "public static RaftJournalConfiguration defaults(ServiceType serviceType) {",
-      "line_coverage": 0.231,
-      "branch_coverage": 0.435
+      "sc": 0.216,
+      "bc": 0.216
     },
     {
       "file": "core/server/proxy/src/main/java/alluxio/web/ProxyWebServer.java",
       "method": "public void init() throws ServletException {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.37
+      "sc": 0.124,
+      "bc": 0.124
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/ufs/UfsJournalCheckpointThread.java",
       "method": "private void maybeCheckpoint() {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.419
+      "sc": 0.936,
+      "bc": 0.766
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/ufs/UfsJournalCheckpointThread.java",
       "method": "private void runInternal() {",
-      "line_coverage": 0.435,
-      "branch_coverage": 0.428
+      "sc": 0.149,
+      "bc": 0.07
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/ufs/UfsJournalCheckpointThread.java",
       "method": "public void run() {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.474
+      "sc": 0.905,
+      "bc": 0.905
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startJvmMonitorProcess() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.287,
+      "bc": 0.283
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/AlluxioWorkerProcess.java",
       "method": "public void start() throws Exception {",
-      "line_coverage": 0.441,
-      "branch_coverage": 0.47
+      "sc": 0.303,
+      "bc": 0.303
     },
     {
       "file": "core/common/src/main/java/alluxio/util/JvmPauseMonitor.java",
       "method": "public void run() {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.38
+      "sc": 0.076,
+      "bc": 0.053
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/UnderFileSystemBlockReader.java",
       "method": "private void updateBlockWriter(long offset) throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.417,
+      "bc": 0.417
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/UnderFileSystemBlockReader.java",
       "method": "public void close() throws IOException {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.457
+      "sc": 0.158,
+      "bc": 0.158
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/UnderFileSystemBlockReader.java",
       "method": "public ByteBuffer read(long offset, long length) throws IOException {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.158,
+      "bc": 0.158
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/UnderFileSystemBlockReader.java",
       "method": "private void init(long offset) throws IOException {",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.413
+      "sc": 0.645,
+      "bc": 0.578
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/grpc/BlockWriteHandler.java",
       "method": "protected BlockWriteRequestContext createRequestContext(alluxio.grpc.WriteRequest msg)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.728,
+      "bc": 0.655
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/grpc/UfsFallbackBlockWriteHandler.java",
       "method": "protected BlockWriteRequestContext createRequestContext(alluxio.grpc.WriteRequest msg)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.492,
+      "bc": 0.429
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startServingRPCServer() {",
-      "line_coverage": 0.426,
-      "branch_coverage": 0.435
+      "sc": 0.749,
+      "bc": 0.623
     },
     {
       "file": "core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalConfiguration.java",
       "method": "public static RaftJournalConfiguration defaults(ServiceType serviceType) {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.281,
+      "bc": 0.279
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/SessionCleaner.java",
       "method": "public void run() {",
-      "line_coverage": 0.141,
-      "branch_coverage": 0.109
+      "sc": 0.364,
+      "bc": 0.364
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/block/DefaultBlockWorker.java",
       "method": "public void start(WorkerNetAddress address) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.572,
+      "bc": 0.564
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "private void checkTieredLocality() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.381,
+      "bc": 0.381
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "public void validate() {",
-      "line_coverage": 0.38,
-      "branch_coverage": 0.474
+      "sc": 0.971,
+      "bc": 1.0
     },
     {
       "file": "core/common/src/main/java/alluxio/network/TieredIdentityFactory.java",
       "method": "static TieredIdentity create(AlluxioConfiguration conf) {",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.47
+      "sc": 0.336,
+      "bc": 0.311
     },
     {
       "file": "core/common/src/main/java/alluxio/network/TieredIdentityFactory.java",
       "method": "public static TieredIdentity fromString(String identityString, AlluxioConfiguration conf)",
-      "line_coverage": 0.334,
-      "branch_coverage": 0.38
+      "sc": 0.156,
+      "bc": 0.154
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/file/activesync/ActiveSyncManager.java",
       "method": "public void launchPollingThread(long mountId, long txId) {",
-      "line_coverage": 0.428,
-      "branch_coverage": 0.457
+      "sc": 0.431,
+      "bc": 0.429
     },
     {
       "file": "core/common/src/main/java/alluxio/heartbeat/HeartbeatThread.java",
       "method": "public void run() {",
-      "line_coverage": 0.735,
-      "branch_coverage": 0.419
+      "sc": 0.515,
+      "bc": 0.514
     },
     {
       "file": "core/server/master/src/main/java/alluxio/master/AlluxioMasterProcess.java",
       "method": "protected void startJvmMonitorProcess() {",
-      "line_coverage": 0.626,
-      "branch_coverage": 0.413
+      "sc": 0.087,
+      "bc": 0.04
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/AlluxioWorkerProcess.java",
       "method": "public void start() throws Exception {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.463,
+      "bc": 0.338
     },
     {
       "file": "core/server/worker/src/main/java/alluxio/worker/AlluxioWorkerProcess.java",
       "method": "public void stop() throws Exception {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.119,
+      "bc": 0.104
     },
     {
       "file": "core/common/src/main/java/alluxio/util/JvmPauseMonitor.java",
       "method": "public void run() {",
-      "line_coverage": 0.46,
-      "branch_coverage": 0.38
+      "sc": 0.452,
+      "bc": 0.426
     },
     {
       "file": "core/common/src/main/java/alluxio/AbstractClient.java",
       "method": "public synchronized void connect() throws AlluxioStatusException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.385,
+      "bc": 0.385
     },
     {
       "file": "core/common/src/main/java/alluxio/AbstractClient.java",
       "method": "private synchronized <V> V retryRPCInternal(RpcCallable<V> rpc, Supplier<Void> onRetry)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.597,
+      "bc": 0.157
     },
     {
       "file": "core/common/src/main/java/alluxio/AbstractClient.java",
       "method": "protected synchronized <V> V retryRPC(RpcCallable<V> rpc, String rpcName)",
-      "line_coverage": 0.431,
-      "branch_coverage": 0.37
+      "sc": 0.14,
+      "bc": 0.138
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "private void checkTimeouts() {",
-      "line_coverage": 1.0,
-      "branch_coverage": 1.0
+      "sc": 0.072,
+      "bc": 0.072
     },
     {
       "file": "core/common/src/main/java/alluxio/conf/InstancedConfiguration.java",
       "method": "public void validate() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.583,
+      "bc": 0.578
     }
   ]
 }

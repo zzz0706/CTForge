@@ -1,690 +1,690 @@
 {
-  "average_line_coverage": 0.0,
-  "average_branch_coverage": 0.0,
+  "average_sc": 0.439,
+  "average_bc": 0.391,
   "details": [
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ServerConfig.java",
       "method": "public void parse(String[] args) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 1.0,
+      "bc": 1.0
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ServerConfig.java",
       "method": "public File getDataDir() { return dataDir; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.291,
+      "bc": 0.04
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
       "method": "public long getDataDirSize() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.654,
+      "bc": 0.654
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "protected void initializeAndRun(String[] args)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.376,
+      "bc": 0.366
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/DatadirCleanupManager.java",
       "method": "public void start() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.731,
+      "bc": 0.731
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ServerConfig.java",
       "method": "public File getDataLogDir() { return dataLogDir; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.415,
+      "bc": 0.415
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.6,
+      "bc": 0.25
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/DatadirCleanupManager.java",
       "method": "public void start() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.249,
+      "bc": 0.249
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "protected void initializeAndRun(String[] args)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.05,
+      "bc": 0.047
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void start() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.139,
+      "bc": 0.128
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerConf.java",
       "method": "public int getClientPort() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.863,
+      "bc": 0.221
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ServerCnxnFactory.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.311,
+      "bc": 0.102
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public boolean areLocalSessionsEnabled() { return localSessionsEnabled; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.428,
+      "bc": 0.192
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumZooKeeperServer.java",
       "method": "protected void setLocalSessionFlag(Request si) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.816,
+      "bc": 0.813
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void runFromConfig(QuorumPeerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.343,
+      "bc": 0.342
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public boolean areLocalSessionsEnabled() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.673,
+      "bc": 0.673
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void enableLocalSessions(boolean flag) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.224,
+      "bc": 0.223
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java",
       "method": "public void createSessionTracker() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.576,
+      "bc": 0.208
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java",
       "method": "public boolean checkIfValidGlobalSession(long sess, int to) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.216,
+      "bc": 0.204
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java",
       "method": "public void createSessionTracker() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.025,
+      "bc": 0.02
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LeaderSessionTracker.java",
       "method": "public boolean addGlobalSession(long sessionId, int sessionTimeout) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.507,
+      "bc": 0.466
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LeaderSessionTracker.java",
       "method": "public boolean addSession(long sessionId, int sessionTimeout) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.001,
+      "bc": 0.001
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LeaderSessionTracker.java",
       "method": "public long createSession(int sessionTimeout) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.373,
+      "bc": 0.297
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public boolean isLocalSessionsUpgradingEnabled() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.645,
+      "bc": 0.607
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void enableLocalSessionsUpgrading(boolean flag) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.915,
+      "bc": 0.909
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public boolean isLocalSessionsUpgradingEnabled() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.137,
+      "bc": 0.136
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumZooKeeperServer.java",
       "method": "public Request checkUpgradeSession(Request request)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.119,
+      "bc": 0.119
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public InetSocketAddress getClientPortAddress() { return clientPortAddress; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.709,
+      "bc": 0.657
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.436,
+      "bc": 0.42
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void runFromConfig(QuorumPeerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.032,
+      "bc": 0.026
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
       "method": "public int getSecureClientPort() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.472,
+      "bc": 0.268
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.658,
+      "bc": 0.658
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public InetSocketAddress getSecureClientPortAddress() { return secureClientPortAddress; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.768,
+      "bc": 0.768
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void runFromConfig(QuorumPeerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.323,
+      "bc": 0.323
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.747,
+      "bc": 0.549
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public int getTickTime() { return tickTime; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.246,
+      "bc": 0.246
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void runFromConfig(QuorumPeerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.411,
+      "bc": 0.411
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public long getEpochToPropose(long sid, long lastAcceptedEpoch) throws InterruptedException, IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.276,
+      "bc": 0.276
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public void waitForEpochAck(long id, StateSummary ss) throws IOException, InterruptedException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.567,
+      "bc": 0.567
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public void waitForNewLeaderAck(long sid, long zxid)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.597,
+      "bc": 0.509
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ServerConfig.java",
       "method": "public int getMaxClientCnxns() { return maxClientCnxns; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.228,
+      "bc": 0.228
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.18,
+      "bc": 0.177
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void runFromConfig(QuorumPeerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.187,
+      "bc": 0.187
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxnFactory.java",
       "method": "private boolean doAccept() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.832,
+      "bc": 0.696
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxnFactory.java",
       "method": "private void select() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.191,
+      "bc": 0.187
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxnFactory.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.302,
+      "bc": 0.302
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
       "method": "public void setMinSessionTimeout(int min) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.896,
+      "bc": 0.856
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
       "method": "public void processConnectRequest(ServerCnxn cnxn, ByteBuffer incomingBuffer) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.107,
+      "bc": 0.106
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.197,
+      "bc": 0.197
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
       "method": "public void setMaxSessionTimeout(int max) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.986,
+      "bc": 1.0
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
       "method": "public void processConnectRequest(ServerCnxn cnxn, ByteBuffer incomingBuffer) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.144,
+      "bc": 0.093
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java",
       "method": "public void runFromConfig(ServerConfig config)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.459,
+      "bc": 0.458
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public void checkValidity() throws IOException, ConfigException{",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.617,
+      "bc": 0.605
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public int getInitLimit() { return initLimit; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.37,
+      "bc": 0.306
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Learner.java",
       "method": "protected void connectToLeader(InetSocketAddress addr, String hostname)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.507,
+      "bc": 0.362
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.1,
+      "bc": 0.097
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public long getEpochToPropose(long sid, long lastAcceptedEpoch) throws InterruptedException, IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.255,
+      "bc": 0.222
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public void waitForEpochAck(long id, StateSummary ss) throws IOException, InterruptedException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.927,
+      "bc": 0.855
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Leader.java",
       "method": "public void waitForNewLeaderAck(long sid, long zxid)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.938,
+      "bc": 0.769
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LearnerHandler.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.498,
+      "bc": 0.422
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Learner.java",
       "method": "protected void connectToLeader(InetSocketAddress addr, String hostname)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.347,
+      "bc": 0.347
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Learner.java",
       "method": "protected void syncWithLeader(long newLeaderZxid) throws Exception{",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.459,
+      "bc": 0.456
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LearnerHandler.java",
       "method": "public synchronized boolean check(long time) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.265,
+      "bc": 0.23
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "private void setSockOpts(Socket sock) throws SocketException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.164,
+      "bc": 0.164
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public int getElectionAlg() { return electionAlg; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.235,
+      "bc": 0.21
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void setElectionType(int electionType) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.234,
+      "bc": 0.232
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public int getElectionType() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.635,
+      "bc": 0.635
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "protected Election createElectionAlgorithm(int electionAlgorithm){",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.913,
+      "bc": 0.855
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public synchronized void restartLeaderElection(QuorumVerifier qvOLD, QuorumVerifier qvNEW){",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.517,
+      "bc": 0.517
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void shutdown() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.012,
+      "bc": 0.012
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public Boolean getQuorumListenOnAllIPs() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.855,
+      "bc": 0.855
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.078,
+      "bc": 0.078
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "private void setupPeerType() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.788,
+      "bc": 0.395
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public LearnerType getPeerType() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.662,
+      "bc": 0.656
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void setLearnerType(LearnerType p) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.689,
+      "bc": 0.684
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "private boolean updateLearnerType(QuorumVerifier newQV) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.316,
+      "bc": 0.316
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public boolean processReconfig(QuorumVerifier qv, Long suggestedLeaderId, Long zxid, boolean restartLE) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.978,
+      "bc": 1.0
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LearnerHandler.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.321,
+      "bc": 0.309
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public boolean getSyncEnabled() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.067,
+      "bc": 0.065
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void setSyncEnabled(boolean syncEnabled) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.979,
+      "bc": 1.0
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public boolean getSyncEnabled() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.649,
+      "bc": 0.649
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java",
       "method": "public void commitRequest(Request request) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.848,
+      "bc": 0.751
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java",
       "method": "protected void setupRequestProcessors() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.608,
+      "bc": 0.607
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java",
       "method": "public synchronized void shutdown() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.456,
+      "bc": 0.194
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public int getSnapRetainCount() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.306,
+      "bc": 0.306
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "protected void initializeAndRun(String[] args)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.632,
+      "bc": 0.631
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/DatadirCleanupManager.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.222,
+      "bc": 0.174
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public int getPurgeInterval() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.45,
+      "bc": 0.444
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "protected void initializeAndRun(String[] args)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.273,
+      "bc": 0.18
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/DatadirCleanupManager.java",
       "method": "public void start() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.115,
+      "bc": 0.115
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public static boolean isStandaloneEnabled() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.461,
+      "bc": 0.458
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public static void setStandaloneEnabled(boolean enabled) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.088,
+      "bc": 0.076
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public static boolean isReconfigEnabled() { return reconfigEnabled; }",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.222,
+      "bc": 0.141
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public static void setReconfigEnabled(boolean enabled) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.058,
+      "bc": 0.02
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public boolean processReconfig(QuorumVerifier qv, Long suggestedLeaderId, Long zxid, boolean restartLE) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.242,
+      "bc": 0.241
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Learner.java",
       "method": "protected void syncWithLeader(long newLeaderZxid) throws Exception{",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.257,
+      "bc": 0.227
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public boolean isSslQuorum() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.06,
+      "bc": 0.06
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Learner.java",
       "method": "protected void connectToLeader(InetSocketAddress addr, String hostname)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.23,
+      "bc": 0.23
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/Learner.java",
       "method": "private Socket createSocket() throws X509Exception, IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.14,
+      "bc": 0.14
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.947,
+      "bc": 0.765
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java",
       "method": "public boolean shouldUsePortUnification() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.161,
+      "bc": 0.073
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public void run() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.919,
+      "bc": 0.919
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/common/X509Util.java",
       "method": "public void enableCertFileReloading() throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.309,
+      "bc": 0.304
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeerMain.java",
       "method": "public void parseProperties(Properties zkProp, boolean ctest_inj , boolean inj_env_param, boolean inj_cli_port)",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.696,
+      "bc": 0.695
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void initialize() throws SaslException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.085,
+      "bc": 0.058
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void initialize() throws SaslException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.494,
+      "bc": 0.494
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void initialize() throws SaslException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.199,
+      "bc": 0.199
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void initialize() throws SaslException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.175,
+      "bc": 0.175
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumPeer.java",
       "method": "public void initialize() throws SaslException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.667,
+      "bc": 0.594
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/auth/SaslQuorumAuthLearner.java",
       "method": "public void authenticate(Socket sock, String hostName) throws IOException {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.745,
+      "bc": 0.666
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public Thread newThread(Runnable r) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.517,
+      "bc": 0.448
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public void initiateConnectionAsync(final Socket sock, final Long sid) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.782,
+      "bc": 0.639
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public void receiveConnectionAsync(final Socket sock) {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.293,
+      "bc": 0.291
     },
     {
       "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java",
       "method": "public void halt() {",
-      "line_coverage": 0.0,
-      "branch_coverage": 0.0
+      "sc": 0.378,
+      "bc": 0.378
     }
   ]
 }
