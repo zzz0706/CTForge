@@ -1,0 +1,207 @@
+{
+    "hbase.master.logcleaner.ttl": [
+        "-100",
+        "9223372036854775808",
+        "ABC"
+    ],
+    "hbase.dynamic.jars.dir": [],
+    "hbase.rootdir": [
+        "${hello}",
+        "12345",
+        "hdfs://namenode.example.org:9000/hbase"
+    ],
+    "hbase.regionserver.info.bindAddress": [
+        "192.168.0.1",
+        "ABC"
+    ],
+    "hbase.regionserver.port": [
+        "-1",
+        "ABC"
+    ],
+    "hbase.ipc.server.callqueue.read.ratio": [
+        "-0.1",
+        "123",
+        "ABC"
+    ],
+    "hbase.systemtables.compacting.memstore.type": [
+        "0",
+        "1",
+        "ABC "
+    ],
+    "hbase.mob.compaction.threads.max": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.regionserver.logroll.period": [
+        "-100",
+        "9.22337203685478E+018",
+        "9223372036854775808",
+        "ABC"
+    ],
+    "hbase.server.versionfile.writeattempts": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.hstore.compaction.max.size": [
+        "-100",
+        "0",
+        "1000.5"
+    ],
+    "hbase.hregion.memstore.block.multiplier": [
+        "-1",
+        "9223372036854775808",
+        "ABC"
+    ],
+    "hbase.master.loadbalancer.class": [
+        "100",
+        "ABC"
+    ],
+    "hbase.regionserver.logroll.errors.tolerated": [
+        "-1",
+        "ABC"
+    ],
+    "hbase.mob.cache.evict.period": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "hbase.regionserver.thread.compaction.throttle": [
+        "-100",
+        "9223372036854775808",
+        "ABC"
+    ],
+    "hbase.wal.dir.perms": [
+        "-100",
+        "800"
+    ],
+    "hbase.master.port": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.cells.scanned.per.heartbeat.check": [
+        "-100",
+        "9223372036854775808",
+        "ABC"
+    ],
+    "hbase.regionserver.global.memstore.size": [
+        "0,0f"
+    ],
+    "hbase.regionserver.global.memstore.size.lower.limit": [
+        "-1",
+        "1.1f"
+    ],
+    "hbase.regions.slop": [
+        "-100",
+        "-1000",
+        "ABC"
+    ],
+    "hbase.hstore.compaction.min.size": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "hbase.hstore.flusher.count": [
+        "-1",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.master.mob.ttl.cleaner.period": [
+        "-0.1",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.master.normalizer.class": [
+        "-100",
+        "ABC",
+        "org.apache.hadoop.hbase.master.normalizer.SimpleRegionHHH"
+    ],
+    "hbase.hregion.memstore.flush.size": [],
+    "hbase.status.multicast.address.port": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.hstore.compaction.max": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.master.logcleaner.plugins": [],
+    "hbase.snapshot.master.timeout.millis": [
+        "ABC"
+    ],
+    "hbase.replication.rpc.codec": [],
+    "hbase.hstore.checksum.algorithm": [
+        "100",
+        "ABC",
+        "CTC32 "
+    ],
+    "hbase.procedure.master.classes": [
+        "ABC",
+        "org.apache.hadoop.hbase.HBaseConfiguration",
+        "org.apache.hadoop.hbase.procedure.MasterProcedureManager"
+    ],
+    "hbase.superuser": [],
+    "hbase.mob.cache.evict.remain.ratio": [
+        "-0.1f",
+        "ABC"
+    ],
+    "hbase.lease.recovery.timeout": [],
+    "hbase.regionserver.info.port": [],
+    "hbase.coprocessor.master.classes": [
+        "100",
+        ";",
+        "ABC"
+    ],
+    "hbase.status.publisher.class": [
+        "-100",
+        "ABC"
+    ],
+    "hbase.status.multicast.address.ip": [
+        "0",
+        "127.0.0.1",
+        "ABC"
+    ],
+    "hbase.hregion.percolumnfamilyflush.size.lower.bound.min": [
+        "ABC"
+    ],
+    "hbase.server.compactchecker.interval.multiplier": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.replication.source.maxthreads": [
+        "-1",
+        "-100",
+        "0"
+    ],
+    "hbase.rootdir.perms": [
+        "0",
+        "711",
+        "ABC"
+    ],
+    "hbase.rpc.shortoperation.timeout": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "hbase.lease.recovery.dfs.timeout": [
+        "-1",
+        "0",
+        "1"
+    ],
+    "hbase.regionserver.optionalcacheflushinterval": [
+        "-1",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.bulkload.retries.number": [
+        "-1",
+        "2147483648",
+        "ABC"
+    ],
+    "hbase.bucketcache.bucket.sizes": []
+}

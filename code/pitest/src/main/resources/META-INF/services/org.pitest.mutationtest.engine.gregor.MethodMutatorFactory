@@ -1,0 +1,11 @@
+com.example.pitest.AndToOrMutator
+com.example.pitest.DataMutator
+com.example.pitest.BranchConditionMutator
+com.example.pitest.DataUseMutator
+com.example.pitest.DataModifierMutator
+com.example.pitest.BranchInvertMutator
+com.example.pitest.LogicalOperatorMutator
+com.example.pitest.ReturnConstantMutator
+com.example.pitest.LoopConditionMutator
+com.example.pitest.BranchFlipMutator
+com.example.pitest.DataOffsetMutator

@@ -1,0 +1,153 @@
+{
+    "dataDir": [],
+    "dataLogDir": [],
+    "clientPort": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "localSessionsEnabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "localSessionsUpgradingEnabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "clientPortAddress": [
+        "-100",
+        "0.05",
+        "128.128.0.0"
+    ],
+    "secureClientPort": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "secureClientPortAddress": [
+        "-100",
+        "0.05",
+        "128.128.0.0"
+    ],
+    "tickTime": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "maxClientCnxns": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "minSessionTimeout": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "maxSessionTimeout": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "initLimit": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "syncLimit": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "electionAlg": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "quorumListenOnAllIPs": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "peerType": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "syncEnabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "autopurge.snapRetainCount": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "autopurge.purgeInterval": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ],
+    "standaloneEnabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "reconfigEnabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "sslQuorum": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "portUnification": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "sslQuorumReloadCertFiles": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "quorum.auth.enableSasl": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "quorum.auth.serverRequireSasl": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "quorum.auth.learnerRequireSasl": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "quorum.auth.learner.saslLoginContext": [
+        ",,,",
+        "123",
+        "QuorumServer"
+    ],
+    "quorum.auth.server.saslLoginContext": [
+        ",,,",
+        "123",
+        "QuorumLearner"
+    ],
+    "quorum.auth.kerberos.servicePrincipal": [
+        "-100",
+        "ABC"
+    ],
+    "quorum.cnxn.threads.size": [
+        "-100",
+        "0.05",
+        "2147483648"
+    ]
+}

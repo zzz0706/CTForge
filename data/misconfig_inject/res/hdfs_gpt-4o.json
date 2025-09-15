@@ -1,0 +1,226 @@
+{
+    "dfs.namenode.shared.edits.dir": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.namenode.checkpoint.dir": [
+        "/tmp/ctest-hadoop-dir",
+        "12345",
+        "file:///tmp/ctest-hadoop-dir"
+    ],
+    "dfs.client.block.write.retries": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.client.block.write.replace-datanode-on-failure.policy": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.xframe.value": [
+        "1.1.1.1",
+        "123",
+        "sxd"
+    ],
+    "dfs.cachereport.intervalMsec": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.client-write-packet-size": [],
+    "dfs.internal.nameservices": [],
+    "dfs.client.mmap.cache.size": [
+        "-1",
+        "2147483648",
+        "sxd"
+    ],
+    "dfs.datanode.address": [
+        "127.0.0.1:-1",
+        "300.00.1:5000",
+        "bogus"
+    ],
+    "dfs.trustedchannel.resolver.class": [
+        "123",
+        "a.b.c.d",
+        "bogus"
+    ],
+    "dfs.datanode.metrics.logger.period.seconds": [
+        "12.34",
+        "2147483648",
+        "sxd"
+    ],
+    "dfs.namenode.fs-limits.max-blocks-per-file": [
+        "-1",
+        "9223372036854775808",
+        "sxd"
+    ],
+    "dfs.client.slow.io.warning.threshold.ms": [
+        "0",
+        "0.5",
+        "bogus"
+    ],
+    "dfs.namenode.audit.loggers": [
+        "12345",
+        "org.apache.hadoop.hdfs.server.namenode.AuditLogger",
+        "org.apache.hadoop.hdfs.server.namenode.HdfsAuditLogger"
+    ],
+    "dfs.image.transfer-bootstrap-standby.bandwidthPerSec": [
+        "-1",
+        "9223372036854775808",
+        "sxd"
+    ],
+    "dfs.namenode.accesstime.precision": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.datanode.transfer.socket.recv.buffer.size": [
+        "0.05",
+        "ABC"
+    ],
+    "dfs.datanode.dns.nameserver": [
+        "999.999.999.999",
+        "sxd"
+    ],
+    "dfs.namenode.edekcacheloader.initial.delay.ms": [
+        "-1",
+        "2147483648",
+        "sxd"
+    ],
+    "dfs.namenode.full.block.report.lease.length.ms": [
+        "-10",
+        "0",
+        "bogus"
+    ],
+    "dfs.namenode.edit.log.autoroll.multiplier.threshold": [
+        "-1",
+        "0",
+        "sxd"
+    ],
+    "dfs.namenode.replication.interval": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.image.transfer.timeout": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.namenode.checkpoint.edits.dir": [],
+    "dfs.namenode.resource.du.reserved": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.namenode.resource.check.interval": [
+        "-1",
+        "9.22337E+18",
+        "sxd"
+    ],
+    "dfs.namenode.https-address": [],
+    "dfs.namenode.resource.checked.volumes.minimum": [
+        "-10",
+        "0.5",
+        "bogus"
+    ],
+    "dfs.permissions.superusergroup": [
+        "0!1!2",
+        "b/o/g/u/s",
+        "i;d;k"
+    ],
+    "dfs.namenode.checkpoint.check.period": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.datanode.dns.interface": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.datanode.directoryscan.threads": [
+        "-10",
+        "0.5",
+        "bogus"
+    ],
+    "dfs.namenode.delegation.token.max-lifetime": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.namenode.hosts.provider.classname": [
+        "12345",
+        "org.apache.hadoop.hdfs.server.blockmanagement.HostConfigManager",
+        "sxd"
+    ],
+    "dfs.namenode.safemode.threshold-pct": [
+        "TRUE",
+        "blah",
+        "bogus"
+    ],
+    "dfs.datanode.slow.io.warning.threshold.ms": [
+        "0",
+        "9223372036854775808",
+        "sxd"
+    ],
+    "dfs.namenode.heartbeat.recheck-interval": [
+        "0.05",
+        "ABC"
+    ],
+    "dfs.namenode.top.windows.minutes": [
+        "-1,0,2",
+        "123.456",
+        "sxd"
+    ],
+    "dfs.ha.tail-edits.period": [
+        "-10",
+        "0",
+        "bogus"
+    ],
+    "dfs.datanode.cache.revocation.timeout.ms": [
+        "-10",
+        "0",
+        "bogus"
+    ],
+    "dfs.ha.log-roll.period": [],
+    "dfs.webhdfs.socket.read-timeout": [
+        "-1",
+        "0",
+        "1sxd"
+    ],
+    "dfs.namenode.fs-limits.max-xattrs-per-inode": [
+        "-1",
+        "2147483648",
+        "sxd"
+    ],
+    "dfs.web.authentication.kerberos.principal": [
+        "123",
+        "a;b;c",
+        "bogus"
+    ],
+    "dfs.image.transfer.bandwidthPerSec": [
+        "-10",
+        "0.5",
+        "bogus"
+    ],
+    "dfs.namenode.decommission.blocks.per.interval": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "dfs.webhdfs.socket.connect-timeout": [
+        "1sxd"
+    ],
+    "dfs.namenode.write.stale.datanode.ratio": [
+        "-1",
+        "sxd"
+    ],
+    "dfs.namenode.top.num.users": [
+        "0",
+        "2147483648",
+        "sxd"
+    ]
+}

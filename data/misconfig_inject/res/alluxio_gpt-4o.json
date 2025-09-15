@@ -1,0 +1,203 @@
+{
+    "alluxio.master.journal.tailer.shutdown.quiet.wait.time": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.worker.data.folder.permissions": [],
+    "alluxio.master.backup.directory": [],
+    "alluxio.master.whitelist": [
+        ";;;",
+        "?;?;",
+        "??"
+    ],
+    "alluxio.master.audit.logging.enabled": [],
+    "alluxio.master.jvm.monitor.enabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.web.refresh.interval": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.worker.data.folder.tmp": [
+        "/alluxio_blocks",
+        "/var/alluxio_blocks"
+    ],
+    "alluxio.user.network.netty.channel": [
+        "0",
+        "ABC",
+        "NONE"
+    ],
+    "alluxio.master.rpc.executor.keepalive": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.master.journal.retry.interval": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.network.connection.health.check.timeout": [
+        "-1sec",
+        "0sec",
+        "ABC"
+    ],
+    "alluxio.zookeeper.job.leader.path": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.master.startup.block.integrity.check.enabled": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.master.rpc.executor.max.pool.size": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "alluxio.master.metastore.inode.cache.max.size": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "alluxio.user.block.worker.client.pool.size": [
+        "-1",
+        "0",
+        "ABC "
+    ],
+    "alluxio.master.tieredstore.global.mediumtype": [],
+    "alluxio.user.block.avoid.eviction.policy.reserved.size.bytes": [
+        "ABC"
+    ],
+    "alluxio.master.worker.connect.wait.time": [
+        "-1",
+        "0.001",
+        "ABC"
+    ],
+    "alluxio.user.short.circuit.enabled": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "alluxio.job.master.rpc.addresses": [
+        "ABC"
+    ],
+    "alluxio.user.file.replication.min": [
+        "-1",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.master.standby.heartbeat.interval": [
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.worker.allocator.class": [
+        "-100",
+        "ABC",
+        "alluxio.worker.block.allocator.MaxFreeAllocatorCtestBad"
+    ],
+    "alluxio.worker.tieredstore.block.locks": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "alluxio.user.ufs.block.location.all.fallback.enabled": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "alluxio.master.audit.logging.queue.capacity": [],
+    "alluxio.zookeeper.job.election.path": [
+        "-100",
+        "ABC"
+    ],
+    "alluxio.user.file.create.ttl.action": [],
+    "alluxio.worker.block.master.client.pool.size": [
+        "-100",
+        "2147483648",
+        "ABC"
+    ],
+    "alluxio.user.file.master.client.threads": [],
+    "alluxio.master.worker.timeout": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.master.embedded.journal.election.timeout": [
+        "-100",
+        "ABC"
+    ],
+    "alluxio.master.periodic.block.integrity.check.interval": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.security.group.mapping.cache.timeout": [],
+    "alluxio.job.master.embedded.journal.addresses": [
+        "ABC"
+    ],
+    "alluxio.proxy.stream.cache.timeout": [
+        "-1sec",
+        "0sec",
+        "ABC"
+    ],
+    "alluxio.master.journal.checkpoint.period.entries": [
+        "-100",
+        "0.05",
+        "9223372036854775808"
+    ],
+    "alluxio.jvm.monitor.warn.threshold": [
+        "-1sec",
+        "ABC "
+    ],
+    "alluxio.worker.file.buffer.size": [
+        "-1MB",
+        "0MB",
+        "ABC"
+    ],
+    "alluxio.master.rpc.executor.core.pool.size": [
+        "-100",
+        "0.005",
+        "ABC"
+    ],
+    "alluxio.worker.network.netty.boss.threads": [
+        "-1",
+        "0",
+        "ABC"
+    ],
+    "alluxio.master.embedded.journal.storage.level": [
+        "123",
+        "ABC",
+        "HHH"
+    ],
+    "alluxio.worker.block.heartbeat.interval": [
+        "-100",
+        "0.05",
+        "ABC"
+    ],
+    "alluxio.locality.order": [
+        "-100",
+        "100",
+        "ABC"
+    ],
+    "alluxio.master.ufs.active.sync.interval": [
+        "-100",
+        "0.001",
+        "ABC"
+    ],
+    "alluxio.jvm.monitor.info.threshold": [
+        "-1sec",
+        "ABC"
+    ],
+    "alluxio.user.rpc.retry.max.sleep": [
+        "-1",
+        "0.001",
+        "ABC"
+    ]
+}

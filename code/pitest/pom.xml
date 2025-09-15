@@ -1,0 +1,85 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>pitest</artifactId>
+  <version>1.0-SNAPSHOT</version>
+<name>pitest</name> 
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <pitest.version>1.17.4</pitest.version>
+  </properties>
+
+<dependencies>
+
+  <dependency>
+    <groupId>org.pitest</groupId>
+    <artifactId>pitest</artifactId>
+    <version>1.17.4</version>
+    <scope>provided</scope>   
+  </dependency>
+
+  <dependency>
+     <groupId>org.apache.poi</groupId>
+     <artifactId>poi-ooxml</artifactId>
+     <version>5.2.5</version>
+   </dependency>
+
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.20.0</version>
+  </dependency>
+  
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.20.0</version>
+  </dependency>
+</dependencies>
+
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>${pitest.version}</version>
+
+        <configuration>
+
+          <mutators>
+            <mutator>BRANCH_CONDITION</mutator>
+              <mutator>BRANCH_INVERT</mutator>
+              <mutator>DATA</mutator>
+              <mutator>DATA_USE</mutator>
+              <mutator>DATA_MODIFIER</mutator>
+
+              <mutator>BRANCH_FLIP</mutator>
+              <mutator>DATA_OFFSET</mutator>
+
+              <mutator>LOGICAL_OPERATOR_MUTATOR</mutator>
+              <mutator>RETURN_CONSTANT_MUTATOR</mutator>
+              <mutator>LOOP_CONDITION_MUTATOR</mutator>
+
+          </mutators>
+          <verbose>true</verbose>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Implementation-Title>hadoop-custom-mutator</Implementation-Title>
+              <Implementation-Vendor>your-name-or-org</Implementation-Vendor>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

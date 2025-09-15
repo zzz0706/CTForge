@@ -1,0 +1,197 @@
+{
+    "hadoop.security.java.secure.random.algorithm": [
+        "0.8",
+        "123",
+        "world"
+    ],
+    "hadoop.user.group.static.mapping.overrides": [
+        "100",
+        "a=b,=d;",
+        "a=b,c=d;"
+    ],
+    "tfile.fs.input.buffer.size": [
+        "-262144",
+        "262144.5",
+        "ABC"
+    ],
+    "hadoop.security.uid.cache.secs": [
+        "-1",
+        "0.5",
+        "ABC"
+    ],
+    "hadoop.http.filter.initializers": [],
+    "hadoop.security.crypto.jce.provider": [
+        "-100",
+        "ABC",
+        "sun.security.jgss.SunProvider"
+    ],
+    "ipc.maximum.response.length": [],
+    "hadoop.ssl.server.conf": [],
+    "ha.failover-controller.cli-check.rpc-timeout.ms": [
+        "-1",
+        "0",
+        "asd"
+    ],
+    "hadoop.security.groups.cache.secs": [
+        "-300",
+        "300.5",
+        "ABC"
+    ],
+    "file.stream-buffer-size": [
+        "-1",
+        "0.5",
+        "ABC"
+    ],
+    "hadoop.ssl.enabled.protocols": [],
+    "hadoop.security.crypto.cipher.suite": [
+        "/",
+        "AES/CTR/NoPaddin",
+        "AES/SAM/NoPadding"
+    ],
+    "fs.trash.checkpoint.interval": [
+        "0.5",
+        "ABC"
+    ],
+    "net.topology.table.file.name": [
+        "/myfile",
+        "0.05^*^*"
+    ],
+    "hadoop.security.kms.client.encrypted.key.cache.expiry": [
+        "-123",
+        "0",
+        "YYY"
+    ],
+    "hadoop.caller.context.signature.max.size": [
+         "0",
+        "0.5",
+        "ABC"
+    ],
+    "hadoop.ssl.keystores.factory.class": [],
+    "fs.df.interval": [
+        "-1",
+        "0.5",
+        "ABC"
+    ],
+    "hadoop.ssl.client.conf": [],
+    "tfile.fs.output.buffer.size": [
+        "-100",
+        "0.345",
+        "LOL"
+    ],
+    "hadoop.caller.context.max.size": [
+        "-1",
+        "0",
+        "1.5"
+    ],
+    "hadoop.kerberos.kinit.command": [],
+    "ipc.client.rpc-timeout.ms": [
+        "-6000",
+        "600000.5",
+        "600000000"
+    ],
+    "hadoop.security.sensitive-config-keys": [
+        "***",
+        "123",
+        "helloworld"
+    ],
+    "hadoop.security.dns.log-slow-lookups.threshold.ms": [
+        "-34",
+        "0.008",
+        "123asd"
+    ],
+    "io.bytes.per.checksum": [
+        "-1",
+        "0.5",
+        "ABC"
+    ],
+    "hadoop.rpc.socket.factory.class.default": [
+        "123",
+        "asd",
+        "org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory"
+    ],
+    "hadoop.rpc.protection": [
+        ",",
+        "authentication,hello",
+        "hello"
+    ],
+    "io.seqfile.compress.blocksize": [
+        "-1000000",
+        "1000000.5",
+        "ABC"
+    ],
+    "ha.failover-controller.graceful-fence.connection.retries": [
+        "-1",
+        "0.5",
+        "ABC"
+    ],
+    "hadoop.security.kms.client.encrypted.key.cache.size": [
+        "-500",
+        "500.5",
+        "ABC"
+    ],
+    "ha.failover-controller.new-active.rpc-timeout.ms": [
+        "-8",
+        "0",
+        "HHH"
+    ],
+    "ha.health-monitor.rpc-timeout.ms": [
+        "-45000",
+        "2000000000",
+        "45000.5"
+    ],
+    "io.mapfile.bloom.error.rate": [
+        "-1",
+        "0",
+        "1"
+    ],
+    "hadoop.security.crypto.buffer.size": [
+        "0",
+        "0.5",
+        "ABC"
+    ],
+    "io.seqfile.local.dir": [
+        "-100"
+    ],
+    "hadoop.security.random.device.file.path": [],
+    "fs.ftp.host": [
+        "256.789.1.15",
+        "TRUE",
+        "bogus"
+    ],
+    "fs.permissions.umask-mode": [
+        "202",
+        "420",
+        "888"
+    ],
+    "ipc.client.idlethreshold": [
+        "-4000",
+        "4000.5"
+    ],
+    "io.map.index.interval": [
+        "-12",
+        "0",
+        "0.4"
+    ],
+    "fs.viewfs.rename.strategy": [
+        "1",
+        "TRUE",
+        "bogus"
+    ],
+    "fs.defaultFS": [
+        "",
+        "file:/",
+        "file:///10000"
+    ],
+    "hadoop.kerberos.min.seconds.before.relogin": [
+        "-60",
+        "60.5"
+    ],
+    "io.file.buffer.size": [],
+    "ipc.maximum.data.length": [],
+    "ipc.client.connection.maxidletime": [],
+    "net.topology.script.file.name": [
+        "0.5",
+        "1000",
+        "myfile"
+    ]
+}
