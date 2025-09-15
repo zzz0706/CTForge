@@ -1,6 +1,6 @@
 # MediConf: Automatically Generating Configuration Tests For Large-scale Software Systems
 
-This is a repo for MediConf(FSE26 submission)
+This is a repo for MediConf(FSE26#2111 submission)
 
 ## Running the workflow
 The workflow is split into dedicated packages so each stage can be used independently.
@@ -39,7 +39,7 @@ Integrate JaCoCo into the target software, and then execute the following comman
    python iteration.mutation_iteration.py hdfs
    ```
  
-` CTForge/code/demo ` is a demo project for MediConf, which is used to demonstrate the workflow.
+The `CTForge/code/demo` directory contains a sample project for MediConf. It demonstrates the tool's workflow and includes examples of generated tests
 
 ## Data overview
 The `data/` directory collects artefacts produced during experiments:
