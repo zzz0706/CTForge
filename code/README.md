@@ -1,24 +1,33 @@
-This module groups the refactored code for analysing configuration options and
-automatically generating tests.  The workflow is split into dedicated
-packages so each stage can be used independently.
 
-## Package overview
-- `config/` – repository paths and shared constants.
-- `generation/` – utilities to collect source code, query an LLM for
-  configuration summaries and build test cases.
-- `iteration/` – helpers for improving tests through coverage inspection,
-  configuration value injection and mutation analysis.
+# Running the workflow
 
-## Typical workflow
-1. **Extract configuration information**
-   - `generation/get_source_code.py` .
-   - `generation/extract_cflow.py` 
-2. **Generate tests**
-   - `generation/test_generate.py` creates candidate test cases.
-   - `generation/llm_test.py` compiles and runs the tests.
-3. **Iterate on quality**
-   - `iteration/coverage.py` Coverage Refinement.
-   - `iteration/conf_inject.py` Validity Voting, injects new configuration values into source files.
-   - `iteration/mutation_testing.py` Mutation-based Refinement.
+## 1. Gather configuration flow information
+1. Generate propagation paths with **cFlow**.
+   ```bash
+   cd code/cflow
+   mvn compile
+   ./run.sh -a hdfs   # replace with target system
+   ```
+   The analysis writes source-to-sink paths to `tmp.txt`.
+2. Summarise the paths and recover relevant source code.
+   ```bash
+   python -m code.generation.extract_cflow    # build summaries for param
+   python -m code.generation.get_source_code  # pull method bodies
+   ```
+## 2. Generate tests
+ `python -m code.generation.llm_test` compiles and executes the generated tests and coverage refinement.
 
+Generated Java tests are stored under `data/generated_test/<llm>/<project>`.
 
+## 3. Iterate on test quality
+
+   `iteration/coverage.py` coverage refinement
+ 
+1. Inject alternative configuration values and perform validity voting:
+   ```bash
+   python -m code.iteration.conf_inject.main hdfs
+   ```
+2. Perform mutation-based refinement:
+   ```bash
+   python -m code.iteration.mutation_testing hdfs
+   ```

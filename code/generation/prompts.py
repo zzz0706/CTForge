@@ -19,9 +19,6 @@ target software: repo_name
 The configuration information is as follows. You need to understand the functionality of the configuration and its value constraints.
 {conf_info}
 
-These configuration dependencies you might need to consider, if they are not present, then consider them based on the code.
-{dependency_info}
-
 The propagation summary of this configuration in the project is as follows. You need to understand how the configuration propagates and is used.
 {data_flow_summary}
 
@@ -103,9 +100,6 @@ You should consider the unit testing guidelines for repo_name, and then correctl
 
 The configuration information is as follows. For the configuration information, you need to understand the functionality of the configuration and its value constraints.
 {conf_info}
-
-These configuration dependencies you might need to consider, if they are not present, then consider them based on the code.
-{dependency_info}
 
 The propagation summary of this configuration in the project is as follows. You need to understand how the configuration propagates through the functions and how it plays its role.
 {data_flow_summary}

@@ -91,34 +91,6 @@ public class CryptoStreamBufferTest {
         random.nextBytes(iv);
     }
 
-    /**
-     * test_case_name: testCryptoInputStreamReadWithConfiguredBufferSize
-     * objective: Verify that CryptoInputStream reads data correctly when hadoop.security.crypto.buffer.size is configured.
-     * prerequisites:
-     *   - Hadoop Common environment setup (for Configuration).
-     *   - A CryptoCodec implementation (AES/CTR/NoPadding used here).
-     *   - Generated encryption key and initialization vector (IV).
-     *   - Configuration explicitly setting hadoop.security.crypto.buffer.size >= 512 and multiple of cipher block size.
-     * steps:
-     *   1. Create a Hadoop Configuration object (done in setUp, uses `new Configuration(false)`).
-     *   2. Explicitly set hadoop.security.crypto.buffer.size to a valid value (done in setUp, uses 512).
-     *   3. Initialize CryptoCodec with the configuration (done in setUp).
-     *   4. Retrieve the configured buffer size using CryptoStreamUtils.getBufferSize(conf) and verify it (done in setUp).
-     *   5. Prepare plaintext data larger than the configured buffer size.
-     *   6. Create an underlying InputStream (ByteArrayInputStream) with the plaintext data.
-     *   7. Instantiate CryptoOutputStream using the *explicit buffer size* verified in setUp, codec, key, IV, and a ByteArrayOutputStream to encrypt the plaintext.
-     *   8. Write the plaintext data through CryptoOutputStream and close it to get the encrypted data.
-     *   9. Create a new underlying InputStream (ByteArrayInputStream) with the encrypted data.
-     *  10. Instantiate CryptoInputStream using the *explicit buffer size* verified in setUp, codec, key, IV, and the encrypted data stream.
-     *  11. Create a byte array buffer for reading, smaller than the configured crypto buffer size to ensure multiple read calls.
-     *  12. Repeatedly call the CryptoInputStream.read(byte[] b, int off, int len) method until the end of the stream is reached, accumulating the decrypted data.
-     *  13. Close the CryptoInputStream.
-     * expected_result:
-     *   - The CryptoInputStream should be successfully created using the buffer size specified explicitly. (Fix addresses the observed IllegalArgumentException here).
-     *   - The read operations should complete without errors.
-     *   - The total number of bytes read should match the original plaintext data size.
-     *   - The accumulated decrypted data must exactly match the original plaintext data, verifying that the stream correctly handled decryption regardless of the internal buffer size configured.
-     */
     @Test
     public void testCryptoInputStreamReadWithConfiguredBufferSize() throws IOException, GeneralSecurityException {
         // Prepare plaintext data. Make it larger than the configured size to ensure buffering is tested.
@@ -150,15 +122,7 @@ public class CryptoStreamBufferTest {
         ByteArrayInputStream encryptedStream = new ByteArrayInputStream(encryptedData);
         ByteArrayOutputStream decryptedCollector = new ByteArrayOutputStream();
 
-        // Decrypt data using CryptoInputStream
-        // Pass the verified configuredBufferSize explicitly to the constructor
-        // CryptoStreamUtils.checkBufferSize is called inside the constructor.
-        // This was the point of failure according to the stack trace. The setUp ensures configuredBufferSize is valid (512).
         try (InputStream cryptoIn = new CryptoInputStream(encryptedStream, codec, configuredBufferSize, key, iv)) {
-            // Use a read buffer significantly smaller than the crypto buffer to force multiple reads
-            // This helps ensure the internal buffering and decryption logic of CryptoInputStream is exercised.
-            // Ensure read buffer is at least 1 byte and not excessively large.
-            // With configuredBufferSize = 512, readBufSize = 512 / 4 = 128
             int readBufSize = Math.max(1, Math.min(1024, configuredBufferSize / 4));
             // Handle case where configuredBufferSize might be small (though >= 512) - this check is now less critical but safe
             if (readBufSize == 0 && configuredBufferSize > 0) readBufSize = 1;
