@@ -20,7 +20,7 @@ ExperimentCode/
 
 ` pitest ` provides a set of mutation operators (mutators) for Mutation-based Refinement.
 
-` cflow `  is a taint analysis tool that has been optimized in our work. The original implementation was released at https://github.com/xlab-uiuc/cflow
+` cflow` We build upon the openly released repository of cflow (https://github.com/xlab-uiuc/cflow), and optimize it in our work.
 
 ## Workflow
 
@@ -40,7 +40,7 @@ Ensure that `config.py` is configured and that the target software is instrument
 
 Next, set the `api-key` in the `LLMPrompt`.  
 
-Finally, compile and execute the generated tests, along with coverage refinement, by running:  
+Finally, generation testing along with coverage refinement, by running:  
 
 ```bash
 python LLMTest.py

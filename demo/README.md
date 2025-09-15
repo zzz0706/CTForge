@@ -118,11 +118,3 @@ public class DfsClientConfTest {
     }
 }
 ```
-
-# Three-stage Validation and Refinement
-
-When the tests pass and can cover the CR code, you can perform the following actions
-
-Then you can inject valid configuration values for validation, such as: 0, 10, 100, 1000, 10000.
-
-If all valid values pass, you can perform mutation testing: inject mutants and see if they are killed.

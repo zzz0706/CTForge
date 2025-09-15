@@ -38,4 +38,5 @@ The `data/` directory contains artifacts produced during experiments:
 - **`misconfig_inject/`** – Contains injected misconfiguration values (`inject_value/`) and LLM evaluation results (`res/`).  
 - **`param_data/`** – Excel spreadsheets listing configuration parameters of each studied project.  
 
+For instructions on running the code, see [code/README.md](code/README.md).
 For more details on the dataset, see [`data/README.md`](data/README.md).  
