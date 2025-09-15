@@ -12,7 +12,6 @@ info_path = {
     "zookeeper" : "zookeeper.xlsx"
 }
 
-value_path = "injected_misconfig.tsv"
 
 def get_conf_list(info_path):
 
@@ -23,11 +22,11 @@ def get_conf_list(info_path):
 def get_misconf_value(conf_name):
     
     data = []
-
+    inject_value__path = "injected_misconfig"
     
     with open(inject_value__path, 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='\t')
-        headers = next(reader)  
+        headers = next(reader)  # 读取表头
 
         for row in reader:         
             project = str(row[0])
@@ -35,7 +34,7 @@ def get_misconf_value(conf_name):
             mis_conf = str(row[2])
             if name == conf_name:
                 data.append(mis_conf)
-
+                # print(mis_conf)
     return data
 
 def get_valid_conf_value(conf_name, inject_value__path):
@@ -55,8 +54,7 @@ def get_valid_conf_value(conf_name, inject_value__path):
                 data.append(value2)
             if value3 != "" or value3 != "nan":
                 data.append(value3)
-         
+            # print(mis_conf)
     return data
-
 
    

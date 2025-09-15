@@ -1,3 +1,14 @@
+# Param Info
+```xml
+<property>
+  <name>dfs.client.block.write.retries</name>
+  <value>3</value>
+  <description>The number of retries for writing blocks to the data nodes, 
+  before we signal failure to the application.
+  </description>
+</property>
+```
+
 # Knowledge Provision
 run `python llm_test.py summary` 
 

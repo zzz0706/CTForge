@@ -9,11 +9,11 @@ import json
 import time
 from pathlib import Path
 
-from .llm_prompt import LLMPrompt
+from LLMPrompt import LLMPrompt
 from .path_construct import PathBuilder
-from .test_generate import TestGenerator
-from .. import config
-from ..iteration.coverage import Coverage
+from Test_Generate import TestGenerator
+import config
+from refinement.coverage import Coverage
 
 model_path = "gpt-4o" 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -42,7 +42,7 @@ class LLMTester:
             name = row['name']
             values = row['values']
             description = row['description']
-            data_flow_summary = row['data_flow_summary']
+            data_flow_summary = row['summary']
             source_code = row['source_code']
             function_method = row['function_method']
             num = num + 1
@@ -125,10 +125,8 @@ class LLMTester:
             print("result.json is not found")
 
 
-    def validity_testing(self):  # read dataset and execute tests, method 3: long COT
-        """
-        configuration validation generation
-        """
+    def validity_testing(self):  
+
         df = pd.read_excel(self.info_path)  # read configuration information
         num = 0
         result = []

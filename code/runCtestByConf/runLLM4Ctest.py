@@ -6,24 +6,23 @@ import re
 import pandas as pd
 import time
 import sys
-
-from ../generated_test_path/path_construct import Path_construct
-
+from path_construct import Path_construct
 from runCtest import  is_compile_failed, is_error_test, is_failure_test, is_run_test
 
 
 generated_test_path = {
-    "hadoop": ["code/"],
-    "hdfs"  : ["code"],
+    "hadoop": [
+        "hadoop/kimi/code/",
+               ],
+    "hdfs"  : ["hdfs/kimi/code/",]
 }
 
 execute_path = {
     "hadoop" : "hadoop/hadoop-common-project/hadoop-common/",
-    "hdfs" : "hadoop/hadoop-hdfs-project/",
-    "zookeeper" : "zookeeper-server/",
 }
 
 current_path = os.path.dirname(os.path.abspath(__file__))
+
 
 class RunnerTest:
     def __init__(self, repo_name):
@@ -37,12 +36,12 @@ class RunnerTest:
         os.chdir(execute_path[self.repo_name])
 
         if self.repo_name == "alluxio":
-           
+            # file_name = "test.class"
             cmd = ["mvn", "test", "-Dtest=" + file_name, "-DfailIfNoTests=false", "-Dcheckstyle.skip=true", "-Dlicense.skip=true", "-Dfindbugs.skip=true"]
             try:
                 result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)  
             except subprocess.TimeoutExpired:
-              
+
                 class Result:
                     pass
                 result = Result()
@@ -57,7 +56,6 @@ class RunnerTest:
             try:
                 result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)  
             except subprocess.TimeoutExpired:
-                print(f">>>[run_test]\t命令执行超时 (超过10分钟): {' '.join(cmd)}")
 
                 class Result:
                     pass
@@ -84,7 +82,7 @@ class RunnerTest:
         match = re.search(pattern, test_code)
         
         if match:
-            return match.group(1)
+            return match.group(1)  
         else:
             return "None"
 
@@ -92,7 +90,7 @@ class RunnerTest:
         
         file_name = self.get_file_name(content)
         class_name = self.get_package_name(content)
-  
+
 
         if self.path_construct.build_package_path(class_name) == "None" or self.path_construct.build_package_path(class_name) is None:
             return "None", "None"
@@ -108,13 +106,15 @@ class RunnerTest:
         
 
     def find_files_in_matching_folders(self, root_folder, match_str):
-       
+      
         matched_files = []
         found_match = False  
 
         for item in os.listdir(root_folder):
             sub_folder_path = os.path.join(root_folder, item)
+
             if os.path.isdir(sub_folder_path):
+
                 if match_str in item:
                     found_match = True
 
@@ -137,7 +137,7 @@ class RunnerTest:
         
 
         
-    def write_test(self, test_code, write_path) -> bool:
+    def write_test(self, test_code, write_path) -> bool: 
         try:
             with open(write_path, "w") as f:
                 f.write(test_code)
@@ -157,6 +157,7 @@ class RunnerTest:
         conf_paths = []
         for path in generated_test_path[self.repo_name]:
             conf_paths.extend(self.find_files_in_matching_folders(path, conf_name))
+
         data = []
         is_compile_num = 0
         is_error_num = 0
@@ -164,28 +165,26 @@ class RunnerTest:
         is_run_num = 0
 
         for path in conf_paths:   
-
-
+           
             with open(path, 'r') as file:   
                 content = file.read()
             try:
                 write_path, file_name = self.get_write_path(content)
             except:
-       
                 continue
-    
 
-            print(f">>>>>write_path: {write_path}")
-             
+           
+            if write_path == "None":
+                print(f">>>[runTestByConf]\twrite_path is not found")
+                continue
 
             if self.write_test(content, write_path):
                 result = self.run_test(file_name)
-             
-                if self.delete_test(write_path):
+               
+                if self.delete_test(write_path):     
                     pass
-                else:
-                    pass
-
+               
+              
                 if is_compile_failed(result):
                     is_compile_num += 1
                     info = "compile failed"
@@ -193,18 +192,23 @@ class RunnerTest:
                 elif is_error_test(result):
                     is_error_num += 1
                     info = "error test"
-            
+                 
                 elif is_failure_test(result):
                     is_failure_num += 1
                     info = "failure test"
-           
+                
                 elif not is_run_test(result):
                     is_run_num += 1
                     info = "no run test"
                 else:
-                    info = "success"             
+                    info = "success"
+                       
             else:
+                
                 continue
+            
+         
+
 
             element = {
                 "conf_name": conf_name,
@@ -215,30 +219,38 @@ class RunnerTest:
             data.append(element)
             if info == "error test" or info == "failure test":
                 print(f">>>>conf: {conf_name}, test: {path}, info: {info}")
-           
+                # break
+
         os.chdir(current_path)
 
 
         timestamp = time.strftime('%Y%m%d_%H%M%S')
-        store_path = f"{self.repo_name}_{conf_name}_{timestamp}.json"
+        store_path = f"result/singleConf/LLM4Ctest_{self.repo_name}_{conf_name}_{timestamp}.json"
         with open(store_path, "w") as f:
             json.dump(data, f, indent=4)
 
         return data
     
     def runAllTest(self):
+      
         data = []
         for conf_name in os.listdir(generated_test_path[self.repo_name][0]):
-            print(f">>>[runAllTest]\tconf_name: {conf_name}")     
+            
             if conf_name == "clientPort":
                 continue
             data.append(self.runTestByConf(conf_name)) 
-
+        
         timestamp = time.strftime('%Y%m%d_%H%M%S')
-        store_path = f"result/allCtest/LLM4Ctest_{self.repo_name}_all_{timestamp}.json"
+        store_path = f"{self.repo_name}_all_{timestamp}.json"
         with open(store_path, "w") as f:
             json.dump(data, f, indent=4)    
         
         return data
              
+
+if __name__ == "__main__":
+    repo_name = "zookeeper"
+    runner = RunnerTest(repo_name)
+    runner.runAllTest()
+
     

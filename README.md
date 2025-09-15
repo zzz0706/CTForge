@@ -1,52 +1,41 @@
-# MediConf: Automatically Generating Configuration Tests For Large-scale Software Systems
+# MediConf: Automatically Generating Configuration Tests for Large-scale Software Systems
 
-This is a repo for MediConf(FSE26#2111 submission)
+## Environment
 
-## Running the workflow
-The workflow is split into dedicated packages so each stage can be used independently.
-### 1. Gather configuration flow information
-1. Generate propagation paths with **cFlow**.
-   The analysis writes source-to-sink paths to `tmp.txt`.
-2. Summarise the paths and recover relevant source code.
-   ```bash
-   python  generation.get_source_code.py  # get CR code
-   python  generation.extract_cflow.py    # build summaries for param
-   ```
+### Software Stack
+This project has been validated with the following stack (exact versions recommended):
 
-### 2. Generate tests
-Integrate JaCoCo into the target software, and then execute the following command.
+- **OS:** Ubuntu 24.04  
+- **Python:** 3.10.14  
+- **JDK:** OpenJDK 1.8.0_452  
+- **Maven:** Apache Maven 3.6.3  
 
-    python generation.llm_test.py
+### Pre-Run Requirements
+Before execution, the target software must be properly instrumented for **JaCoCo**.  In particular, each module under test should include and configure JaCoCo in its `pom.xml`.  
 
- `python generation.llm_test.py` compiles and executes the generated tests and coverage refinement.
+In addition, the `code/pitest` module must be adapted to the target software, ensuring compatibility and avoiding dependency conflicts.  
 
+### Required Source Code
+The following software source code is required for experiments:
 
-### 3. Iterate on test quality
+- **Hadoop 2.8.5**: `hadoop-common`, `hadoop-hdfs`  
+- **HBase 2.2.2**: `hbase`  
+- **ZooKeeper 3.5.6**: `zookeeper`  
+- **Alluxio 2.1.0**: `core`  
 
-   `iteration/coverage.py` coverage refinement
-   
-   `iteration/conf_inject` validity voting
-   
-   `iteration/mutation_iteration.py` mutation-based refinement
- 
-1. Inject alternative configuration values and perform validity voting:
-   ```bash
-   python iteration.conf_inject.main.py hdfs
-   ```
-2. Perform mutation-based refinement:
-   `Pitest ` is a mutation operator used for mutation testing. Apply it to the target project and then execute the following command: 
-   ```bash
-   python iteration.mutation_iteration.py hdfs
-   ```
- 
-The `CTForge/code/demo` directory contains a sample project for MediConf. It demonstrates the tool's workflow and includes examples of generated tests
+## Demo
 
-## Data overview
-The `data/` directory collects artefacts produced during experiments:
-- `false positive/` – for each project (alluxio, hbase, hcommon, hdfs, zookeeper) this folder contains tests that were identified as false positives.
-- `generated_test/` – LLM-generated test suites (`gpt-4o`, `kimi`).
-- `issue/` –  Code Bugs, Incompatible Issue, and Misconfigurations. A summary table lives in `real-world_issue.xlsx`.
-- `misconfig_inject/` – injected misconfiguration values (`inject_value/`) and LLM evaluation results (`res/`).
-- `param_data/` – Excel spreadsheets listing the configuration parameters of each studied project.
+This demo is a simple example of **test generation**.  
+It demonstrates how MediConf generates `Value validity testing` and `Config functional testing`.  
+Refinement is not included here, but if further refinement is required, it can be combined with the target software in subsequent steps.
 
-See [`data/README.md`](data/README.md) for details about each file.
+## Data Overview
+The `data/` directory contains artifacts produced during experiments:
+
+- **`false positive/`** – For each project (alluxio, hbase, hcommon, hdfs, zookeeper), this folder stores tests identified as false positives.  
+- **`generated_test/`** – LLM-generated test suites (e.g., `gpt-4o`, `kimi`).  
+- **`issue/`** – Includes code bugs, incompatibility issues, and misconfigurations. A summary table is provided in `real-world_issue.xlsx`.  
+- **`misconfig_inject/`** – Contains injected misconfiguration values (`inject_value/`) and LLM evaluation results (`res/`).  
+- **`param_data/`** – Excel spreadsheets listing configuration parameters of each studied project.  
+
+For more details on the dataset, see [`data/README.md`](data/README.md).  

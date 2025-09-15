@@ -1,5 +1,3 @@
-import re
-import os
 
 repo_name = "repo_name"
 

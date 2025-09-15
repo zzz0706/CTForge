@@ -6,7 +6,7 @@ import subprocess
 import time
 import shutil
 
-from runtest.runLLM4Ctest import RunnerTest, generated_test_path, execute_path
+from runCtestByConf.runLLM4Ctest import RunnerTest, generated_test_path, execute_path
 import config
 
 current_path = os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +27,7 @@ class MutationTester:
 
     def _write_tests(self, conf_paths):
 
-        test_classes = []  # fully qualified class names
+        test_classes = [] 
         written_paths = []
         packages = set()
 
@@ -71,29 +71,24 @@ class MutationTester:
         store_path = config.store_path[self.repo_name]
         conf_path = os.path.join(store_path, conf_name)
         
-        # Create the configuration directory if it doesn't exist
+     
         if not os.path.exists(conf_path):
             os.makedirs(conf_path)
         
-        # Copy each written test file to the store path
         for src_path in written_paths:
             if os.path.exists(src_path):
                 file_name = os.path.basename(src_path)
                 dest_path = os.path.join(conf_path, file_name)
                 
-                # Handle naming conflicts like LLMTest.py does
                 if os.path.exists(dest_path):
-                   
-                    # Rename file with timestamp
+
                     name, ext = os.path.splitext(file_name)
                     file_name = f"{name}_{int(time.time())}{ext}"
                     dest_path = os.path.join(conf_path, file_name)
                 
-                try:
-                    shutil.copy2(src_path, dest_path)
-             
-                except Exception as e:
-                    print(f" {src_path}: {e}")
+                
+                shutil.copy2(src_path, dest_path)
+    
 
     def _cleanup_tests(self, written_paths):
         for wp in written_paths:
@@ -102,7 +97,7 @@ class MutationTester:
     def _parse_pitest_output(self, output: str):
         total = killed = 0
         coverage = 0.0
-   
+
         summary_match = re.search(
             r">>\s*Generated\s+(\d+)\s+mutations\s+Killed\s+(\d+)(?:\s+\(([\d.]+)%\))?",
             output,
@@ -113,12 +108,12 @@ class MutationTester:
             total, killed = int(summary_match.group(1)), int(summary_match.group(2))
             print(f"Found summary: total={total}, killed={killed}")
         else:
-
+           
             pattern1 = re.search(r"Generated\s+(\d+)\s+mutations\.\s+Killed\s+(\d+)\.", output, flags=re.IGNORECASE)
             if pattern1:
                 total, killed = int(pattern1.group(1)), int(pattern1.group(2))
                 print(f"Found pattern1: total={total}, killed={killed}")
-
+            
             if total == 0 and killed == 0:
                 pattern2 = re.search(r"Generated\s+(\d+)\s+mutations\s+Killed\s+(\d+)", output, flags=re.IGNORECASE)
                 if pattern2:
@@ -165,13 +160,16 @@ class MutationTester:
             cmd.append(f"-DtargetTests={t}")
         cmd.append("-DfailWhenNoMutations=false")
         cmd.append("-DargLine=\"\"")
-
-    
+        
+        print(f"Running PIT mutation testing: {' '.join(cmd)}")
         result = subprocess.run(cmd, capture_output=True, text=True)
-   
+        print(f"PIT mutation testing completed with return code {result.returncode}")
         
         # Print output for debugging
-       
+        if result.stdout:
+            print(f"STDOUT: {result.stdout}")
+        if result.stderr:
+            print(f"STDERR: {result.stderr}")
         os.chdir(current_path)
         self._cleanup_tests(written_paths)
 
@@ -220,4 +218,16 @@ class MutationTester:
 
 
 if __name__ == "__main__":
-    pass
+    import argparse
+    import time
+    parser = argparse.ArgumentParser(description="Run mutation testing on generated tests")
+    parser.add_argument("repo", help="repository name")
+    parser.add_argument("conf", nargs='?', help="configuration name")
+    args = parser.parse_args()
+    tester = MutationTester(args.repo)
+    if args.conf:
+        result = tester.run_mutation_for_conf(args.conf)
+        print(json.dumps(result, indent=4))
+    else:
+        tester.run_all()
+        print("All mutation tests completed.")

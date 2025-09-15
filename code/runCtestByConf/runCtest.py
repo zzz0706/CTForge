@@ -16,19 +16,18 @@ def is_compile_failed(compile_result):
         return False
 
 def is_error_test( compile_result): 
-
     match = re.search(r"Errors:\s*(\d+)", compile_result.stdout)
     if match:
         error_count = int(match.group(1))
-        if error_count > 0:        
+        if error_count > 0:
             return True
         else:
             return False
     else:
-
         return False
 
 def is_failure_test( compile_result): 
+
     match = re.search(r"Failures:\s*(\d+)", compile_result.stdout)
     if match:
         error_count = int(match.group(1))

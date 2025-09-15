@@ -1,0 +1,582 @@
+{
+  "average_line_coverage": 0.0,
+  "average_branch_coverage": 0.0,
+  "details": [
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/HAUtil.java",
+      "method": "public static boolean usesSharedEditsDir(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "private static void checkConfiguration(Configuration conf)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "public static List<URI> getNamespaceEditsDirs(Configuration conf)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "public static List<URI> getSharedEditsDirs(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/datatransfer/ReplaceDatanodeOnFailure.java",
+      "method": "private static Policy getPolicy(final Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/datatransfer/ReplaceDatanodeOnFailure.java",
+      "method": "public static ReplaceDatanodeOnFailure get(final Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/web/DatanodeHttpServer.java",
+      "method": "protected void initChannel(SocketChannel ch) throws Exception {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/web/DatanodeHttpServer.java",
+      "method": "public NioServerSocketChannel newChannel() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/web/DatanodeHttpServer.java",
+      "method": "protected void doBind(SocketAddress localAddress) throws Exception {}",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/web/DatanodeHttpServer.java",
+      "method": "protected void initChannel(SocketChannel ch) throws Exception {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/SecondaryNameNode.java",
+      "method": "public void startInfoServer() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "public FsServerDefaults getServerDefaults() throws StandbyException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/client/impl/DfsClientConf.java",
+      "method": "public int getWritePacketSize() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DataStreamer.java",
+      "method": "private long computeTransferReadTimeout() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DataStreamer.java",
+      "method": "private void addDatanode2ExistingPipeline() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSOutputStream.java",
+      "method": "private void initWritePacketSize() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSOutputStream.java",
+      "method": "private void adjustPacketChunkSize(HdfsFileStatus stat) throws IOException{",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/DFSUtil.java",
+      "method": "static Collection<String> getInternalNameServices(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/DFSUtil.java",
+      "method": "public static Collection<URI> getInternalNsRpcUris(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitCache.java",
+      "method": "public static ShortCircuitCache fromConf(ShortCircuitConf conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitCache.java",
+      "method": "private int demoteOldEvictableMmaped(long now) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitCache.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitCache.java",
+      "method": "public void close() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitCache.java",
+      "method": "private void trimEvictionMaps() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "static InetSocketAddress getStreamingAddr(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public String getDataPort(){",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "private void initDataXceiver(Configuration conf) throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/datatransfer/TrustedChannelResolver.java",
+      "method": "public static TrustedChannelResolver getInstance(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/ReflectionUtils.java",
+      "method": "public static <T> T newInstance(Class<T> theClass, Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "protected void startMetricsLogger(Configuration metricConf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/client/impl/DfsClientConf.java",
+      "method": "public long getSlowIoWarningThresholdMs() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DataStreamer.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "private List<AuditLogger> initAuditLoggers(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "public List<AuditLogger> getAuditLoggers() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ImageServlet.java",
+      "method": "public Void run() throws Exception {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ImageServlet.java",
+      "method": "private void serveFile(File file) throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "private void initDataXceiver(Configuration conf) throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DNConf.java",
+      "method": "public int getTransferSocketRecvBufferSize() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "private static String getHostName(Configuration config)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockReportLeaseManager.java",
+      "method": "private synchronized void pruneExpiredPending(long monotonicNowMs) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockReportLeaseManager.java",
+      "method": "public synchronized long requestLease(DatanodeDescriptor dn) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/mover/Mover.java",
+      "method": "static int run(Map<URI, List<Path>> namenodes, Configuration conf)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/TransferFsImage.java",
+      "method": "private static void setTimeout(HttpURLConnection connection) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java",
+      "method": "public boolean apply(URI input) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java",
+      "method": "public boolean isResourceAvailable() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "public void run () {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java",
+      "method": "public void stopMonitor() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java",
+      "method": "public boolean apply(URI input) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java",
+      "method": "public boolean hasAvailableDiskSpace() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "private void checkSuperuserPrivilege() throws IOException, AccessControlException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public void refreshNamenodes() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public void deleteBlockPool(String blockPoolId, boolean force)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public synchronized void shutdownDatanode(boolean forUpgrade) throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public void evictWriters() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public void startReconfiguration() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public ReconfigurationTaskStatus getReconfigurationStatus() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public void triggerBlockReport(BlockReportOptions options)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/CheckpointConf.java",
+      "method": "public long getCheckPeriod() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/SecondaryNameNode.java",
+      "method": "public void doWork() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/StandbyCheckpointer.java",
+      "method": "private void doWork() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/StandbyCheckpointer.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/StandbyCheckpointer.java",
+      "method": "public Object run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "private static String getHostName(Configuration config)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java",
+      "method": "public String getNamenodeAddresses() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DirectoryScanner.java",
+      "method": "private Map<String, ScanInfo[]> getDiskReport() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DirectoryScanner.java",
+      "method": "private void scan() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java",
+      "method": "private void updateCurrentKey() throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public HostConfigManager getHostConfigManager() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public void registerDatanode(DatanodeRegistration nodeReg)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BlockReceiver.java",
+      "method": "private void manageWriterOsCache(long offsetInBlock) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/HeartbeatManager.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "private void doWork() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "public Object run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "private boolean tooLongSinceLastLoad() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "private void doWork() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ha/EditLogTailer.java",
+      "method": "public Object run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/web/WebHdfsFileSystem.java",
+      "method": "public StorageStatistics provide() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeHttpServer.java",
+      "method": "private Map<String, String> getAuthFilterParams(Configuration conf)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeHttpServer.java",
+      "method": "private void initWebHdfs(Configuration conf) throws IOException {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ImageServlet.java",
+      "method": "public static DataTransferThrottler getThrottler(Configuration conf) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/util/DataTransferThrottler.java",
+      "method": "public synchronized long getBandwidth() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/util/DataTransferThrottler.java",
+      "method": "public synchronized void throttle(long numOfBytes, Canceler canceler) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DecommissionManager.java",
+      "method": "private boolean exceededNumBlocksPerCheck() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DecommissionManager.java",
+      "method": "public void run() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/web/WebHdfsFileSystem.java",
+      "method": "public StorageStatistics provide() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/web/URLConnectionFactory.java",
+      "method": "public HttpURLConnection configure(HttpURLConnection conn)",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public boolean shouldAvoidStaleDataNodesForWrite() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public int getTotalLoad() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public boolean isAvoidingStaleDataNodesForWrite() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public int getNumDatanodesInService() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java",
+      "method": "public double getInServiceXceiverAverage() {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/top/window/RollingWindowManager.java",
+      "method": "public TopWindow snapshot(long time) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    },
+    {
+      "file": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/Metrics2Util.java",
+      "method": "public boolean offer(NameValuePair entry) {",
+      "line_coverage": 0.0,
+      "branch_coverage": 0.0
+    }
+  ]
+}
