@@ -20,7 +20,7 @@ ExperimentCode/
 
 ` pitest ` provides a set of mutation operators (mutators) for Mutation-based Refinement.
 
-` cflow `  s a taint analysis tool that has been optimized in our work. The original implementation was released at https://github.com/xlab-uiuc/cflow
+` cflow `  is a taint analysis tool that has been optimized in our work. The original implementation was released at https://github.com/xlab-uiuc/cflow
 
 ## Workflow
 

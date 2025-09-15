@@ -1,6 +1,6 @@
 # MediConf: Automatically Generating Configuration Tests for Large-scale Software Systems
 
-## Environment
+## Environment Setup
 
 ### Software Stack
 This project has been validated with the following stack (exact versions recommended):
@@ -25,9 +25,9 @@ The following software source code is required for experiments:
 
 ## Demo
 
-This demo is a simple example of **test generation**.  
+This `demo` is a simple example of **test generation**.  
 It demonstrates how MediConf generates `Value validity testing` and `Config functional testing`.  
-Refinement is not included here, but if further refinement is required, it can be combined with the target software in subsequent steps.
+
 
 ## Data Overview
 The `data/` directory contains artifacts produced during experiments:

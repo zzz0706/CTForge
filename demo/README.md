@@ -55,8 +55,7 @@ Then you can inject valid configuration values for validation, such as: 0, 10, 1
 
 run `python llm_test.py functional`
 
-return:
-test description example:
+return test description example:
 ```json
 [
   {
@@ -126,4 +125,4 @@ When the tests pass and can cover the CR code, you can perform the following act
 
 Then you can inject valid configuration values for validation, such as: 0, 10, 100, 1000, 10000.
 
-If all valid values pass, you can perform mutation testing: inject mutants and see if they are killed
+If all valid values pass, you can perform mutation testing: inject mutants and see if they are killed.
