@@ -31,7 +31,7 @@ Integrate JaCoCo into the target software, and then execute the following comman
  
 1. Inject alternative configuration values and perform validity voting:
    ```bash
-   python -m iteration.conf_inject.main.py hdfs
+   python iteration.conf_inject.main.py hdfs
    ```
 2. Perform mutation-based refinement:
    `Pitest ` is a mutation operator used for mutation testing. Apply it to the target project and then execute the following command: 
