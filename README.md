@@ -45,7 +45,7 @@ Integrate JaCoCo into the target software, and then execute the following comman
 The `data/` directory collects artefacts produced during experiments:
 - `false positive/` – for each project (alluxio, hbase, hcommon, hdfs, zookeeper) this folder contains tests that were identified as false positives.
 - `generated_test/` – LLM-generated test suites (`gpt-4o`, `kimi`).
-- `issue/` –  code bugs, Incompatible Issue, and misconfigurations. A summary table lives in `real-world_issue.xlsx`.
+- `issue/` –  Code Bugs, Incompatible Issue, and Misconfigurations. A summary table lives in `real-world_issue.xlsx`.
 - `misconfig_inject/` – injected misconfiguration values (`inject_value/`) and LLM evaluation results (`res/`).
 - `param_data/` – Excel spreadsheets listing the configuration parameters of each studied project.
 
