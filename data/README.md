@@ -1,8 +1,8 @@
-# Data directory
+# Data 
 
-This directory stores datasets used and produced by CTForge.
+This directory contains the datasets we used and the experimental results..
 
-- `false positive/` – for each project (alluxio, hbase, hcommon, hdfs, zookeeper) this folder contains tests that were identified as false positives. RQ3: Validity Voting.
+- `false_positive/` – for each project (alluxio, hbase, hcommon, hdfs, zookeeper) this folder contains tests that were identified as false positives. RQ3: Validity Voting.
 - `generated_test/` – LLM-produced test suites grouped by model (`gpt-4o`, `kimi`) and project.
   - `conf/` – Value validity testing.
   - `code/` – Config functional testing..
