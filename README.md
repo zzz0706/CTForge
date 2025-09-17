@@ -1,4 +1,4 @@
-# MediConf: Automatically Generating Configuration Tests for Large-scale Software Systems
+# CTForge: Automatically Generating Configuration Tests for Large-scale Software Systems
 
 ## Environment Setup
 
